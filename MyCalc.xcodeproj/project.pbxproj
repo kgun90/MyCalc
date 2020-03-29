@@ -13,6 +13,8 @@
 		3D60C9DB23F4483F00F9DB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9D923F4483F00F9DB34 /* Main.storyboard */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
 		3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
+		82047CA1243091B800B362BA /* LizhongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CA0243091B800B362BA /* LizhongViewController.swift */; };
+		82047CA3243091CB00B362BA /* LizhongMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CA2243091CB00B362BA /* LizhongMain.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3D60C9DC23F4484800F9DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D60C9DF23F4484800F9DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D60C9E123F4484800F9DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82047CA0243091B800B362BA /* LizhongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongViewController.swift; sourceTree = "<group>"; };
+		82047CA2243091CB00B362BA /* LizhongMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongMain.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,34 +41,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D53429A24308ED9009A97D3 /* lizhong */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = lizhong;
-			sourceTree = "<group>";
-		};
-		3D53429B24308EDC009A97D3 /* gun */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = gun;
-			sourceTree = "<group>";
-		};
-		3D53429C24308EDE009A97D3 /* paduck */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = paduck;
-			sourceTree = "<group>";
-		};
-		3D53429D24308EE1009A97D3 /* arthur */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = arthur;
-			sourceTree = "<group>";
-		};
 		3D60C9C723F4483F00F9DB34 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +60,7 @@
 		3D60C9D223F4483F00F9DB34 /* MyCalc */ = {
 			isa = PBXGroup;
 			children = (
-				3D53429D24308EE1009A97D3 /* arthur */,
-				3D53429C24308EDE009A97D3 /* paduck */,
-				3D53429B24308EDC009A97D3 /* gun */,
-				3D53429A24308ED9009A97D3 /* lizhong */,
+				82047C9F243091A900B362BA /* lizhong */,
 				3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */,
 				3D60C9D523F4483F00F9DB34 /* SceneDelegate.swift */,
 				3D60C9D723F4483F00F9DB34 /* ViewController.swift */,
@@ -97,6 +70,15 @@
 				3D60C9E123F4484800F9DB34 /* Info.plist */,
 			);
 			path = MyCalc;
+			sourceTree = "<group>";
+		};
+		82047C9F243091A900B362BA /* lizhong */ = {
+			isa = PBXGroup;
+			children = (
+				82047CA0243091B800B362BA /* LizhongViewController.swift */,
+				82047CA2243091CB00B362BA /* LizhongMain.storyboard */,
+			);
+			path = lizhong;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */,
+				82047CA3243091CB00B362BA /* LizhongMain.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
 				3D60C9DB23F4483F00F9DB34 /* Main.storyboard in Resources */,
 			);
@@ -170,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82047CA1243091B800B362BA /* LizhongViewController.swift in Sources */,
 				3D60C9D823F4483F00F9DB34 /* ViewController.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
 				3D60C9D623F4483F00F9DB34 /* SceneDelegate.swift in Sources */,
