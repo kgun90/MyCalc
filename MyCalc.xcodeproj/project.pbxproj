@@ -58,6 +58,8 @@
 		3D53429C24308EDE009A97D3 /* paduck */ = {
 			isa = PBXGroup;
 			children = (
+				F148674724308FB700BDF162 /* Paduck.storyboard */,
+				F148674B2430902B00BDF162 /* PaduckViewController.swift */,
 			);
 			path = paduck;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F148674824308FB700BDF162 /* Paduck.storyboard in Resources */,
 				3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */,
 				3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
