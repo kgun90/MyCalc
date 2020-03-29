@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
             viewControllerIdentifier = "GunViewController"
         case 3:
         // "Lizhong"의 뷰 컨트롤러로 이동
-            stroyBoardName = "LizhongMain"
+            stroyBoardName = "Lizhong"
             viewControllerIdentifier = "LizhongViewController"
         default:
             break
