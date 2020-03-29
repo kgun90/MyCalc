@@ -25,6 +25,8 @@ class MainViewController: UIViewController {
             break
         case 1:
         // "Paduck"의 뷰 컨트롤러로 이동
+            stroyBoardName = "Paduck"
+            viewControllerIdentifier = "PaduckViewController"
             break
         case 2:
         // "Gun"의 뷰 컨트롤러로 이동

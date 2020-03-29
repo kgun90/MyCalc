@@ -8,20 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
-		3D60C9D823F4483F00F9DB34 /* GunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D723F4483F00F9DB34 /* GunViewController.swift */; };
-		3D60C9DB23F4483F00F9DB34 /* Gun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9D923F4483F00F9DB34 /* Gun.storyboard */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
-		3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
 		3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB16FB243092AB000F9C1C /* main.storyboard */; };
 		3DFB16FE2430937F000F9C1C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
-		3DFB170124309766000F9C1C /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB16FF24309766000F9C1C /* Paduck.storyboard */; };
-		3DFB170224309766000F9C1C /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB170024309766000F9C1C /* PaduckViewController.swift */; };
 		82047CA72430980600B362BA /* LizhongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CA52430980600B362BA /* LizhongViewController.swift */; };
 		82047CA82430980600B362BA /* LizhongMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CA62430980600B362BA /* LizhongMain.storyboard */; };
 		82047CAF2430981E00B362BA /* GunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* GunViewController.swift */; };
-		82047CB02430981E00B362BA /* Gun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAD2430981E00B362BA /* Gun.storyboard */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
-		82047CB52430986900B362BA /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB32430986900B362BA /* Paduck.storyboard */; };
+		F148674D24309AF700BDF162 /* GunViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* GunViewController.swift */; };
+		F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,13 +179,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82047CB52430986900B362BA /* Paduck.storyboard in Resources */,
-				3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */,
-				82047CB02430981E00B362BA /* Gun.storyboard in Resources */,
+				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
+				F148674D24309AF700BDF162 /* GunViewController.swift in Resources */,
 				3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
-				3D60C9DB23F4483F00F9DB34 /* Gun.storyboard in Resources */,
-				3DFB170124309766000F9C1C /* Paduck.storyboard in Resources */,
 				82047CA82430980600B362BA /* LizhongMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,12 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFB170224309766000F9C1C /* PaduckViewController.swift in Sources */,
 				82047CA72430980600B362BA /* LizhongViewController.swift in Sources */,
 				3DFB16FE2430937F000F9C1C /* MainViewController.swift in Sources */,
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
 				82047CAF2430981E00B362BA /* GunViewController.swift in Sources */,
-				3D60C9D823F4483F00F9DB34 /* GunViewController.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

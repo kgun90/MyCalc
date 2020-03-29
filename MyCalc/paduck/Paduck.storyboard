@@ -10,7 +10,7 @@
         <!--Paduck View Controller-->
         <scene sceneID="8jW-Xv-xmF">
             <objects>
-                <viewController id="Nbs-J1-Vai" customClass="PaduckViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="PaduckViewController" storyboardIdentifier="PaduckViewController" id="Nbs-J1-Vai" customClass="PaduckViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNd-Tv-6A5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
