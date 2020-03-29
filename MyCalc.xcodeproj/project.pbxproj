@@ -13,6 +13,8 @@
 		3D60C9DB23F4483F00F9DB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9D923F4483F00F9DB34 /* Main.storyboard */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
 		3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
+		F148674824308FB700BDF162 /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F148674724308FB700BDF162 /* Paduck.storyboard */; };
+		F148674C2430902B00BDF162 /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148674B2430902B00BDF162 /* PaduckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3D60C9DC23F4484800F9DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D60C9DF23F4484800F9DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D60C9E123F4484800F9DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F148674724308FB700BDF162 /* Paduck.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Paduck.storyboard; path = MyCalc/Paduck.storyboard; sourceTree = SOURCE_ROOT; };
+		F148674B2430902B00BDF162 /* PaduckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaduckViewController.swift; path = MyCalc/PaduckViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		3D53429C24308EDE009A97D3 /* paduck */ = {
 			isa = PBXGroup;
 			children = (
+				F148674724308FB700BDF162 /* Paduck.storyboard */,
+				F148674B2430902B00BDF162 /* PaduckViewController.swift */,
 			);
 			path = paduck;
 			sourceTree = "<group>";
@@ -157,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F148674824308FB700BDF162 /* Paduck.storyboard in Resources */,
 				3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
 				3D60C9DB23F4483F00F9DB34 /* Main.storyboard in Resources */,
@@ -170,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F148674C2430902B00BDF162 /* PaduckViewController.swift in Sources */,
 				3D60C9D823F4483F00F9DB34 /* ViewController.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
 				3D60C9D623F4483F00F9DB34 /* SceneDelegate.swift in Sources */,
