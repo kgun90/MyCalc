@@ -12,7 +12,7 @@
 		3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB16FB243092AB000F9C1C /* main.storyboard */; };
 		3DFB16FE2430937F000F9C1C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
 		82047CA72430980600B362BA /* LizhongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CA52430980600B362BA /* LizhongViewController.swift */; };
-		82047CA82430980600B362BA /* LizhongMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CA62430980600B362BA /* LizhongMain.storyboard */; };
+		82047CA82430980600B362BA /* Lizhong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CA62430980600B362BA /* Lizhong.storyboard */; };
 		82047CAF2430981E00B362BA /* GunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* GunViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		F148674D24309AF700BDF162 /* GunViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* GunViewController.swift */; };
@@ -32,7 +32,7 @@
 		3DFB16FF24309766000F9C1C /* Paduck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck.storyboard; sourceTree = "<group>"; };
 		3DFB170024309766000F9C1C /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
 		82047CA52430980600B362BA /* LizhongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LizhongViewController.swift; sourceTree = "<group>"; };
-		82047CA62430980600B362BA /* LizhongMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LizhongMain.storyboard; sourceTree = "<group>"; };
+		82047CA62430980600B362BA /* Lizhong.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lizhong.storyboard; sourceTree = "<group>"; };
 		82047CAC2430981E00B362BA /* GunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunViewController.swift; sourceTree = "<group>"; };
 		82047CAE2430981E00B362BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun.storyboard; sourceTree = "<group>"; };
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		82047C9F243091A900B362BA /* lizhong */ = {
 			isa = PBXGroup;
 			children = (
-				82047CA62430980600B362BA /* LizhongMain.storyboard */,
+				82047CA62430980600B362BA /* Lizhong.storyboard */,
 				82047CA52430980600B362BA /* LizhongViewController.swift */,
 			);
 			path = lizhong;
@@ -183,7 +183,7 @@
 				F148674D24309AF700BDF162 /* GunViewController.swift in Resources */,
 				3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
-				82047CA82430980600B362BA /* LizhongMain.storyboard in Resources */,
+				82047CA82430980600B362BA /* Lizhong.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
