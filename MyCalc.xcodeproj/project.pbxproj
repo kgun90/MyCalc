@@ -8,26 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
-		3D60C9D623F4483F00F9DB34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D523F4483F00F9DB34 /* SceneDelegate.swift */; };
-		3D60C9D823F4483F00F9DB34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D723F4483F00F9DB34 /* ViewController.swift */; };
-		3D60C9DB23F4483F00F9DB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9D923F4483F00F9DB34 /* Main.storyboard */; };
+		3D60C9D823F4483F00F9DB34 /* GunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D723F4483F00F9DB34 /* GunViewController.swift */; };
+		3D60C9DB23F4483F00F9DB34 /* Gun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9D923F4483F00F9DB34 /* Gun.storyboard */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
 		3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
-		82047CA1243091B800B362BA /* LizhongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CA0243091B800B362BA /* LizhongViewController.swift */; };
-		82047CA3243091CB00B362BA /* LizhongMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CA2243091CB00B362BA /* LizhongMain.storyboard */; };
+		3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB16FB243092AB000F9C1C /* main.storyboard */; };
+		3DFB16FE2430937F000F9C1C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
+		3DFB170124309766000F9C1C /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB16FF24309766000F9C1C /* Paduck.storyboard */; };
+		3DFB170224309766000F9C1C /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB170024309766000F9C1C /* PaduckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D60C9D023F4483F00F9DB34 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D60C9D523F4483F00F9DB34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D60C9D723F4483F00F9DB34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D60C9DA23F4483F00F9DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D60C9D723F4483F00F9DB34 /* GunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunViewController.swift; sourceTree = "<group>"; };
+		3D60C9DA23F4483F00F9DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun.storyboard; sourceTree = "<group>"; };
 		3D60C9DC23F4484800F9DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D60C9DF23F4484800F9DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D60C9E123F4484800F9DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82047CA0243091B800B362BA /* LizhongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongViewController.swift; sourceTree = "<group>"; };
-		82047CA2243091CB00B362BA /* LizhongMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongMain.storyboard; sourceTree = "<group>"; };
+		3DFB16FB243092AB000F9C1C /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3DFB16FF24309766000F9C1C /* Paduck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck.storyboard; sourceTree = "<group>"; };
+		3DFB170024309766000F9C1C /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D53429A24308ED9009A97D3 /* lizhong */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lizhong;
+			sourceTree = "<group>";
+		};
+		3D53429B24308EDC009A97D3 /* gun */ = {
+			isa = PBXGroup;
+			children = (
+				3D60C9D723F4483F00F9DB34 /* GunViewController.swift */,
+				3D60C9D923F4483F00F9DB34 /* Gun.storyboard */,
+			);
+			path = gun;
+			sourceTree = "<group>";
+		};
+		3D53429C24308EDE009A97D3 /* paduck */ = {
+			isa = PBXGroup;
+			children = (
+				3DFB16FF24309766000F9C1C /* Paduck.storyboard */,
+				3DFB170024309766000F9C1C /* PaduckViewController.swift */,
+			);
+			path = paduck;
+			sourceTree = "<group>";
+		};
+		3D53429D24308EE1009A97D3 /* arthur */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = arthur;
+			sourceTree = "<group>";
+		};
 		3D60C9C723F4483F00F9DB34 = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +96,11 @@
 			children = (
 				82047C9F243091A900B362BA /* lizhong */,
 				3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */,
-				3D60C9D523F4483F00F9DB34 /* SceneDelegate.swift */,
-				3D60C9D723F4483F00F9DB34 /* ViewController.swift */,
-				3D60C9D923F4483F00F9DB34 /* Main.storyboard */,
 				3D60C9DC23F4484800F9DB34 /* Assets.xcassets */,
 				3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */,
 				3D60C9E123F4484800F9DB34 /* Info.plist */,
+				3DFB16FB243092AB000F9C1C /* main.storyboard */,
+				3DFB16FD2430937F000F9C1C /* MainViewController.swift */,
 			);
 			path = MyCalc;
 			sourceTree = "<group>";
@@ -140,9 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D60C9E023F4484800F9DB34 /* LaunchScreen.storyboard in Resources */,
-				82047CA3243091CB00B362BA /* LizhongMain.storyboard in Resources */,
+				3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
-				3D60C9DB23F4483F00F9DB34 /* Main.storyboard in Resources */,
+				3D60C9DB23F4483F00F9DB34 /* Gun.storyboard in Resources */,
+				3DFB170124309766000F9C1C /* Paduck.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,22 +187,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82047CA1243091B800B362BA /* LizhongViewController.swift in Sources */,
-				3D60C9D823F4483F00F9DB34 /* ViewController.swift in Sources */,
+				3DFB170224309766000F9C1C /* PaduckViewController.swift in Sources */,
+				3DFB16FE2430937F000F9C1C /* MainViewController.swift in Sources */,
+				3D60C9D823F4483F00F9DB34 /* GunViewController.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
-				3D60C9D623F4483F00F9DB34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3D60C9D923F4483F00F9DB34 /* Main.storyboard */ = {
+		3D60C9D923F4483F00F9DB34 /* Gun.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3D60C9DA23F4483F00F9DB34 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Gun.storyboard;
 			sourceTree = "<group>";
 		};
 		3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */ = {
