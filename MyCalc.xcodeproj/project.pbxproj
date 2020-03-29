@@ -37,6 +37,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D53429A24308ED9009A97D3 /* lizhong */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lizhong;
+			sourceTree = "<group>";
+		};
+		3D53429B24308EDC009A97D3 /* gun */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gun;
+			sourceTree = "<group>";
+		};
+		3D53429C24308EDE009A97D3 /* paduck */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = paduck;
+			sourceTree = "<group>";
+		};
+		3D53429D24308EE1009A97D3 /* arthur */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = arthur;
+			sourceTree = "<group>";
+		};
 		3D60C9C723F4483F00F9DB34 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +84,10 @@
 		3D60C9D223F4483F00F9DB34 /* MyCalc */ = {
 			isa = PBXGroup;
 			children = (
+				3D53429D24308EE1009A97D3 /* arthur */,
+				3D53429C24308EDE009A97D3 /* paduck */,
+				3D53429B24308EDC009A97D3 /* gun */,
+				3D53429A24308ED9009A97D3 /* lizhong */,
 				3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */,
 				3D60C9D523F4483F00F9DB34 /* SceneDelegate.swift */,
 				3D60C9D723F4483F00F9DB34 /* ViewController.swift */,
