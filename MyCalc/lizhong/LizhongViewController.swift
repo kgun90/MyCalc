@@ -11,4 +11,14 @@ import UIKit
 
 class LizhongViewController: UIViewController {
     
+    @IBOutlet weak var ACButton: UIButton!
+    @IBOutlet weak var PlusMinusButton: UIButton!
+    
+    override func viewDidLoad() {
+        ACButton.layer.cornerRadius = 40;
+        ACButton.clipsToBounds = true;
+        
+        PlusMinusButton.layer.cornerRadius = 40;
+        PlusMinusButton.clipsToBounds = true;
+    }
 }

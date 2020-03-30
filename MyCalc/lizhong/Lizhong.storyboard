@@ -14,9 +14,56 @@
                     <view key="view" contentMode="scaleToFill" id="xWv-vv-0Cc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAR-EZ-jIp">
+                                <rect key="frame" x="28" y="394" width="80" height="80"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="LxY-EC-JqB"/>
+                                    <constraint firstAttribute="width" secondItem="mAR-EZ-jIp" secondAttribute="height" multiplier="1:1" id="xAV-mA-tD8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="AC">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY6-XM-jGJ">
+                                <rect key="frame" x="116" y="394" width="80" height="80"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="0" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="YOi-MC-dwi">
+                                <rect key="frame" x="28" y="286" width="360" height="90"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="1Sa-bf-uLl"/>
+                                    <constraint firstAttribute="height" constant="90" id="5fr-0V-qSd"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="mAR-EZ-jIp" firstAttribute="top" secondItem="cfF-MA-w0k" secondAttribute="top" constant="350" id="457-bm-Mcv"/>
+                            <constraint firstItem="YOi-MC-dwi" firstAttribute="leading" secondItem="mAR-EZ-jIp" secondAttribute="leading" id="D9G-85-QdI"/>
+                            <constraint firstItem="PY6-XM-jGJ" firstAttribute="leading" secondItem="mAR-EZ-jIp" secondAttribute="trailing" constant="8" symbolic="YES" id="LbA-Qm-GTT"/>
+                            <constraint firstItem="mAR-EZ-jIp" firstAttribute="top" secondItem="YOi-MC-dwi" secondAttribute="bottom" constant="18" id="Lhw-DV-x0p"/>
+                            <constraint firstItem="PY6-XM-jGJ" firstAttribute="top" secondItem="mAR-EZ-jIp" secondAttribute="top" id="fUd-TW-IfT"/>
+                            <constraint firstItem="PY6-XM-jGJ" firstAttribute="width" secondItem="mAR-EZ-jIp" secondAttribute="height" multiplier="1:1" id="m79-8a-ZdU"/>
+                            <constraint firstItem="mAR-EZ-jIp" firstAttribute="leading" secondItem="cfF-MA-w0k" secondAttribute="leading" constant="28" id="mZg-kT-JvL"/>
+                            <constraint firstItem="PY6-XM-jGJ" firstAttribute="height" secondItem="mAR-EZ-jIp" secondAttribute="height" id="zE5-fx-Xtb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cfF-MA-w0k"/>
                     </view>
+                    <connections>
+                        <outlet property="ACButton" destination="mAR-EZ-jIp" id="cXd-ov-VQA"/>
+                        <outlet property="PlusMinusButton" destination="PY6-XM-jGJ" id="KYa-hL-nhy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCj-ve-d5l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
