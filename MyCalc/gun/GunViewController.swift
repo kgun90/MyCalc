@@ -14,10 +14,6 @@ class GunViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    var inputNum = 0
-    var resultNum = 0
-    
-    @IBAction func numDown_1(_ sender: Any) {
-    }
+ 
     
 }
