@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
             return
         }
         
-        var stroyBoardName = ""
+        var storyBoardName = ""
         var viewControllerIdentifier = ""
         
         switch button.tag {
@@ -25,22 +25,22 @@ class MainViewController: UIViewController {
             break
         case 1:
         // "Paduck"의 뷰 컨트롤러로 이동
-            stroyBoardName = "Paduck"
+            storyBoardName = "Paduck"
             viewControllerIdentifier = "PaduckViewController"
             break
         case 2:
         // "Gun"의 뷰 컨트롤러로 이동
-            stroyBoardName = "Gun"
+            storyBoardName = "Gun"
             viewControllerIdentifier = "GunViewController"
         case 3:
         // "Lizhong"의 뷰 컨트롤러로 이동
-            stroyBoardName = "Lizhong"
+            storyBoardName = "Lizhong"
             viewControllerIdentifier = "LizhongViewController"
         default:
             break
         }
         
-        let storyboard = UIStoryboard.init(name: stroyBoardName, bundle: nil)
+        let storyboard = UIStoryboard.init(name: storyBoardName, bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: viewControllerIdentifier)
         
         self.navigationController?.pushViewController(viewController, animated: true)
