@@ -235,17 +235,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="0" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR7-2i-vrT">
-                                <rect key="frame" x="28" y="265" width="340" height="100"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYv-sd-0s6">
+                                <rect key="frame" x="28" y="275" width="330" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="els-DF-zuo"/>
-                                    <constraint firstAttribute="width" constant="340" id="hZM-o9-ctB"/>
+                                    <constraint firstAttribute="width" constant="330" id="Q2y-mc-Pxx"/>
+                                    <constraint firstAttribute="height" constant="90" id="qfh-l9-LfP"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
@@ -263,6 +262,7 @@
                             <constraint firstItem="BUo-hy-YAU" firstAttribute="top" secondItem="6ul-4x-Ksn" secondAttribute="top" id="9yr-z2-xet"/>
                             <constraint firstItem="6KC-2M-CPa" firstAttribute="leading" secondItem="PY6-XM-jGJ" secondAttribute="trailing" constant="8" id="AEY-Cn-it4"/>
                             <constraint firstItem="avF-By-BuJ" firstAttribute="centerX" secondItem="vB8-E3-b3J" secondAttribute="centerX" id="AQg-NG-eRW"/>
+                            <constraint firstItem="gYv-sd-0s6" firstAttribute="leading" secondItem="mAR-EZ-jIp" secondAttribute="leading" id="Ayu-fz-nVu"/>
                             <constraint firstItem="6KC-2M-CPa" firstAttribute="top" secondItem="PY6-XM-jGJ" secondAttribute="top" id="CLS-nB-IEs"/>
                             <constraint firstItem="eKh-ce-15i" firstAttribute="top" secondItem="mAR-EZ-jIp" secondAttribute="top" id="EiT-WX-wsO"/>
                             <constraint firstItem="Mhd-7d-dcL" firstAttribute="trailing" secondItem="Uu3-CX-2j3" secondAttribute="trailing" id="FdT-Z1-VK4"/>
@@ -290,7 +290,6 @@
                             <constraint firstItem="Mhd-7d-dcL" firstAttribute="leading" secondItem="Uu3-CX-2j3" secondAttribute="leading" id="dOL-1H-F5a"/>
                             <constraint firstItem="KhP-Le-dWN" firstAttribute="width" secondItem="G5p-vS-kw5" secondAttribute="width" id="dsA-Js-Len"/>
                             <constraint firstItem="UpM-JK-e5p" firstAttribute="centerX" secondItem="G5p-vS-kw5" secondAttribute="centerX" id="eMd-zH-W91"/>
-                            <constraint firstItem="mAR-EZ-jIp" firstAttribute="top" secondItem="KR7-2i-vrT" secondAttribute="bottom" constant="29" id="elb-wb-9zN"/>
                             <constraint firstItem="Ywk-d3-sCd" firstAttribute="top" secondItem="vB8-E3-b3J" secondAttribute="top" id="fKe-y4-qki"/>
                             <constraint firstItem="PY6-XM-jGJ" firstAttribute="top" secondItem="mAR-EZ-jIp" secondAttribute="top" id="fUd-TW-IfT"/>
                             <constraint firstItem="G5p-vS-kw5" firstAttribute="width" secondItem="avF-By-BuJ" secondAttribute="width" id="fYq-EC-rN3"/>
@@ -310,9 +309,9 @@
                             <constraint firstItem="UpM-JK-e5p" firstAttribute="top" secondItem="Kac-fK-F46" secondAttribute="top" id="tMt-xs-oU6"/>
                             <constraint firstItem="VI1-Kz-Ag4" firstAttribute="top" secondItem="KhP-Le-dWN" secondAttribute="bottom" constant="18" id="txV-js-KHw"/>
                             <constraint firstItem="KhP-Le-dWN" firstAttribute="height" secondItem="G5p-vS-kw5" secondAttribute="height" id="u9H-cU-fJw"/>
-                            <constraint firstItem="KR7-2i-vrT" firstAttribute="leading" secondItem="mAR-EZ-jIp" secondAttribute="leading" id="uCf-mp-PdN"/>
                             <constraint firstItem="BUo-hy-YAU" firstAttribute="centerX" secondItem="UpM-JK-e5p" secondAttribute="centerX" id="v0x-qc-1u0"/>
                             <constraint firstItem="Uu3-CX-2j3" firstAttribute="top" secondItem="mAR-EZ-jIp" secondAttribute="bottom" constant="20" id="vH9-d8-CUo"/>
+                            <constraint firstItem="mAR-EZ-jIp" firstAttribute="top" secondItem="gYv-sd-0s6" secondAttribute="bottom" constant="29" id="xE6-qI-EQi"/>
                             <constraint firstItem="5kv-vB-fia" firstAttribute="centerX" secondItem="Mhd-7d-dcL" secondAttribute="centerX" id="yHi-Ul-pNf"/>
                             <constraint firstItem="avF-By-BuJ" firstAttribute="top" secondItem="vB8-E3-b3J" secondAttribute="bottom" constant="18" id="ymz-me-VVc"/>
                             <constraint firstItem="PY6-XM-jGJ" firstAttribute="height" secondItem="mAR-EZ-jIp" secondAttribute="height" id="zE5-fx-Xtb"/>
