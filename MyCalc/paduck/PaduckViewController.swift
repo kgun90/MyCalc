@@ -9,10 +9,31 @@
 import UIKit
 
 class PaduckViewController: UIViewController {
+    
+    @IBOutlet weak var lable: UILabel!
+    @IBOutlet var collectionOfButtons: Array<UIButton>?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        for btn in collectionOfButtons! {
+            let height = btn.bounds.size.height
+            btn.layer.cornerRadius = height / 2
+        }
     }
-    
+
+    @IBAction func buttonAction(_ sender: Any) {
+        guard let btn: UIButton = sender as? UIButton,
+        let label = btn.titleLabel,
+        let text = label.text
+        else { return }
+        
+//        if let label = btn.titleLabel,
+//            let text = label.text {
+            
+            print(text)
+//            if
+//        }
+    }
 }
