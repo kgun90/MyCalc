@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B266D8243832AD00C88022 /* Arthur.storyboard */; };
+		11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B266DA2438330C00C88022 /* ArthurViewController.swift */; };
 		3D23B2CA2434565700852962 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
@@ -23,17 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B266D8243832AD00C88022 /* Arthur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
+		11B266DA2438330C00C88022 /* ArthurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
 		3D60C9D023F4483F00F9DB34 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D60C9D723F4483F00F9DB34 /* GunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunViewController.swift; sourceTree = "<group>"; };
-		3D60C9DA23F4483F00F9DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun.storyboard; sourceTree = "<group>"; };
 		3D60C9DC23F4484800F9DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D60C9DF23F4484800F9DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D60C9E123F4484800F9DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DFB16FB243092AB000F9C1C /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		3DFB16FF24309766000F9C1C /* Paduck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck.storyboard; sourceTree = "<group>"; };
-		3DFB170024309766000F9C1C /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
 		82047CA52430980600B362BA /* LizhongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LizhongViewController.swift; sourceTree = "<group>"; };
 		82047CA62430980600B362BA /* Lizhong.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lizhong.storyboard; sourceTree = "<group>"; };
 		82047CAC2430981E00B362BA /* GunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B266D72438329B00C88022 /* arthur */ = {
+			isa = PBXGroup;
+			children = (
+				11B266D8243832AD00C88022 /* Arthur.storyboard */,
+				11B266DA2438330C00C88022 /* ArthurViewController.swift */,
+			);
+			path = arthur;
+			sourceTree = "<group>";
+		};
 		3D60C9C723F4483F00F9DB34 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +82,7 @@
 		3D60C9D223F4483F00F9DB34 /* MyCalc */ = {
 			isa = PBXGroup;
 			children = (
+				11B266D72438329B00C88022 /* arthur */,
 				82047CB12430986900B362BA /* paduck */,
 				82047CAB2430981E00B362BA /* gun */,
 				82047C9F243091A900B362BA /* lizhong */,
@@ -98,10 +108,6 @@
 		82047CA4243097DD00B362BA /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				3DFB170024309766000F9C1C /* PaduckViewController.swift */,
-				3D60C9D723F4483F00F9DB34 /* GunViewController.swift */,
-				3D60C9D923F4483F00F9DB34 /* Gun.storyboard */,
-				3DFB16FF24309766000F9C1C /* Paduck.storyboard */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
 				3DFB170324309D1C000F9C1C /* Gun.storyboard in Resources */,
+				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
 				82047CB824309DB600B362BA /* Lizhong.storyboard in Resources */,
 				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
 				F148674D24309AF700BDF162 /* GunViewController.swift in Resources */,
@@ -202,6 +209,7 @@
 			files = (
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
 				82047CA72430980600B362BA /* LizhongViewController.swift in Sources */,
+				11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */,
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
 				82047CAF2430981E00B362BA /* GunViewController.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
@@ -211,14 +219,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3D60C9D923F4483F00F9DB34 /* Gun.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D60C9DA23F4483F00F9DB34 /* Base */,
-			);
-			name = Gun.storyboard;
-			sourceTree = "<group>";
-		};
 		3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

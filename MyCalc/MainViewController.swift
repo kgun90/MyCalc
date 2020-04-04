@@ -22,7 +22,8 @@ class MainViewController: UIViewController {
         switch button.tag {
         case 0:
         // "Arthur"의 뷰 컨트롤러로 이동
-            break
+            storyBoardName = "Arthur"
+            viewControllerIdentifier = "ArthurViewController"
         case 1:
         // "Paduck"의 뷰 컨트롤러로 이동
             storyBoardName = "Paduck"
