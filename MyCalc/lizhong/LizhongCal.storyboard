@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHP-MB-SLZ">
+            <objects>
+                <viewController id="Jxs-kB-EFh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B32-b4-R2c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w2X-ji-xPt">
+                                <rect key="frame" x="10" y="44" width="394" height="828"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRm-vZ-aGe">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="668"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcl-TH-fUt">
+                                                <rect key="frame" x="176" y="323" width="11" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQ3-nO-7dO">
+                                        <rect key="frame" x="0.0" y="668" width="394" height="0.0"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kb3-bc-1pT">
+                                        <rect key="frame" x="0.0" y="668" width="394" height="0.0"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Op-3t-5oK">
+                                        <rect key="frame" x="0.0" y="668" width="394" height="0.0"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16t-tt-YuH">
+                                        <rect key="frame" x="0.0" y="668" width="394" height="110"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FpS-EQ-Z0r">
+                                        <rect key="frame" x="0.0" y="778" width="394" height="50"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lpd-QC-8Dd" firstAttribute="trailing" secondItem="w2X-ji-xPt" secondAttribute="trailing" constant="10" id="4si-r9-SKM"/>
+                            <constraint firstItem="Lpd-QC-8Dd" firstAttribute="top" secondItem="w2X-ji-xPt" secondAttribute="top" id="DJa-vC-NZu"/>
+                            <constraint firstItem="w2X-ji-xPt" firstAttribute="leading" secondItem="Lpd-QC-8Dd" secondAttribute="leading" constant="10" id="l1Y-0h-wtf"/>
+                            <constraint firstItem="w2X-ji-xPt" firstAttribute="bottom" secondItem="Lpd-QC-8Dd" secondAttribute="bottom" constant="10" id="ncr-tL-gfa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lpd-QC-8Dd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kn0-vw-e2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+</document>
