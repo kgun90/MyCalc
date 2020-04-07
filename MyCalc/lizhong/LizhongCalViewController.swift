@@ -6,16 +6,12 @@
 //  Copyright © 2020 Geon Kang. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
+import UIKit
 
-struct LizhongCalViewController: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class LizhongCalViewController: UIViewController {
+    override func viewDidLoad() {
+         
     }
-}
-
-struct LizhongCalViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        LizhongCalViewController()
-    }
+    
 }
