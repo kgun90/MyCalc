@@ -10,11 +10,25 @@ import Foundation
 import UIKit
 
 class LizhongCalViewController: UIViewController {
-    
+    @IBOutlet weak var ParentStackView: UIStackView!
     override func viewDidLoad() {
          
     }
     
+    override func viewDidLayoutSubviews() {
+        for view in ParentStackView.subviews{
+            guard let childStackView = view as? UIStackView else {
+                continue
+            }
+            
+            // StackView인 것이다.
+            for view in childStackView.arrangedSubviews {
+                if let button = view as? UIButton {
+                    button.layer.cornerRadius = button.frame.height * 0.50
+                }
+            }
+        }
+    }
     
 }
 @IBDesignable
@@ -27,19 +41,4 @@ class RoundedButton: UIButton {
             self.layer.cornerRadius = radius
         }
 }
-
-class RoundButton: UIButton {
-    @IBOutlet weak var ParentStackView: UIStackView!
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        for view in ParentStackView.arrangedSubviews{
-            if let button = view as? UIButton{
-                button.layer.cornerRadius = button.frame.height * 0.50
-            }
-        }
-
-    }
-}
-
 

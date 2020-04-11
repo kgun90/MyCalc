@@ -241,6 +241,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lpd-QC-8Dd"/>
                     </view>
+                    <connections>
+                        <outlet property="ParentStackView" destination="w2X-ji-xPt" id="kj1-DP-fmn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kn0-vw-e2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
