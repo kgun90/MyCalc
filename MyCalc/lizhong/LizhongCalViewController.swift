@@ -6,16 +6,40 @@
 //  Copyright © 2020 Geon Kang. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
+import UIKit
 
-struct LizhongCalViewController: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class LizhongCalViewController: UIViewController {
+    
+    override func viewDidLoad() {
+         
+    }
+    
+    
+}
+@IBDesignable
+class RoundedButton: UIButton {
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        let radius = min(self.bounds.width, self.bounds.height) / 2
+            self.layer.cornerRadius = radius
+        }
+}
+
+class RoundButton: UIButton {
+    @IBOutlet weak var ParentStackView: UIStackView!
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        for view in ParentStackView.arrangedSubviews{
+            if let button = view as? UIButton{
+                button.layer.cornerRadius = button.frame.height * 0.50
+            }
+        }
+
     }
 }
 
-struct LizhongCalViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        LizhongCalViewController()
-    }
-}
+
