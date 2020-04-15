@@ -8,11 +8,51 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class LizhongCalViewController: UIViewController {
     @IBOutlet weak var ParentStackView: UIStackView!
+    var btnSound: AVAudioPlayer!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    enum operation: String{
+        case divide = "/"
+        case multiply = "*"
+        case subtract = "-"
+        case add = "+"
+        case empty = "Empty"
+    }
+    
+    var runningNumber = ""
+    var currentOperation = operation.empty
+    var leftValStr = ""
+    var rightValStr = ""
+    var result = ""
+    
+    
     override func viewDidLoad() {
+         let path = Bundle.main.path(forResource: "btn", ofType:"wav")
+         let soundURL = URL(fileURLWithPath: path!)
          
+         do{
+             // try to create the audio player
+             try btnSound = AVAudioPlayer(contentsOf: soundURL)
+             btnSound.prepareToPlay()
+         }catch let err as NSError{
+             // catch error if fails -> avoid crash
+             print(err.debugDescription)
+         }
+    }
+    
+    @IBAction func numberPressed(sender: UIButton){
+        playsound()
+    }
+    
+    func playsound() {
+        if btnSound.isPlaying{
+            btnSound.stop()
+        }
+        btnSound.play()
     }
     
     override func viewDidLayoutSubviews() {
