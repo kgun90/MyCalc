@@ -15,7 +15,7 @@ class LizhongCalViewController: UIViewController {
     var btnSound: AVAudioPlayer!
     @IBOutlet weak var resultLabel: UILabel!
     
-    enum operation: String{
+    enum Operation: String{
         case divide = "/"
         case multiply = "*"
         case subtract = "-"
@@ -24,7 +24,7 @@ class LizhongCalViewController: UIViewController {
     }
     
     var runningNumber = ""
-    var currentOperation = operation.empty
+    var currentOperation = Operation.empty
     var leftValStr = ""
     var rightValStr = ""
     var result = ""
@@ -46,6 +46,8 @@ class LizhongCalViewController: UIViewController {
     
     @IBAction func numberPressed(sender: UIButton){
         playsound()
+        runningNumber += "\(sender.tag)"
+        resultLabel.text = runningNumber
     }
     
     func playsound() {
@@ -53,6 +55,64 @@ class LizhongCalViewController: UIViewController {
             btnSound.stop()
         }
         btnSound.play()
+    }
+    
+    @IBAction func onClearButton(_ sender: AnyObject) {
+        currentOperation = Operation.empty
+        runningNumber = ""
+        resultLabel.text = "0"
+        result = "0"
+    }
+    
+    @IBAction func onDividePressed(sender: AnyObject){
+        processOperation(operation: .divide)
+    }
+    
+    @IBAction func onMultiplyPressed(sender: AnyObject){
+        processOperation(operation: .multiply)
+    }
+    
+    @IBAction func onSubtractPressed(sender: AnyObject){
+        processOperation(operation: .subtract)
+    }
+    
+    @IBAction func onAddPressed(sender: AnyObject){
+        processOperation(operation: .add)
+    }
+    
+
+    @IBAction func onEqualPressed(_ sender: AnyObject) {
+        processOperation(operation: currentOperation)
+    }
+    
+    func processOperation(operation: Operation){
+        playsound()
+        if currentOperation != Operation.empty{
+            
+            // Check if user press twice an operator
+            if runningNumber != ""{
+                rightValStr = runningNumber
+                runningNumber = ""
+                
+                if currentOperation == Operation.multiply{
+                    result = "\(Int(leftValStr)! * Int(rightValStr)!)"
+                }else if currentOperation == Operation.divide{
+                    result = "\(Int(leftValStr)! / Int(rightValStr)!)"
+                }else if currentOperation == Operation.subtract{
+                    result = "\(Int(leftValStr)! - Int(rightValStr)!)"
+                }else if currentOperation == Operation.add{
+                    result = "\(Int(leftValStr)! + Int(rightValStr)!)"
+                }
+                
+                leftValStr = result
+                resultLabel.text = result
+            }
+        }else{
+            // First time click on operator
+            leftValStr = runningNumber
+            runningNumber = ""
+        }
+        currentOperation = operation
     }
     
     override func viewDidLayoutSubviews() {
