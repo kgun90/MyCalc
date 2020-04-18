@@ -26,15 +26,17 @@ class GunViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calcResult.text = "0"
-        for btn in numBtn{
-            btn.layer.cornerRadius = btn.bounds.height / 2
-        }
+       
     }
-
+    override func viewDidLayoutSubviews() {
+         for btn in numBtn{
+                   btn.layer.cornerRadius = btn.bounds.height / 2
+               }
+    }
     @IBAction func numBtnClicked(_ sender: UIButton) {
         if labelNum == nil {
             labelNum = (sender.titleLabel?.text)!
-        } else {
+        } else if Int(labelNum!)!>0{
              labelNum? += (sender.titleLabel?.text)!
         }
         numReset = false
@@ -57,10 +59,15 @@ class GunViewController: UIViewController {
             if sender.titleLabel!.text! == "%"{
                 calcResult.text = String(0.01*Double(firstNum))
             }
+
         }else {
             operationSign = sender.titleLabel!.text!
         }
-
+        if sender.titleLabel!.text! == "+/-" && firstNum != 0{
+            firstNum = -firstNum
+            calcResult.text = String(firstNum)
+            print(calcResult.text)
+        }
     }
     // 연산기호 입력시 수행하는 함수 labelNum상태가 nil이 아님을 확인하여 Operation함수를 호출하여 일단 연산 할 변수에 삽입한다.
     // 입력받은 연산기호를 operationSign에 부여하고, labelNum을 nil로 만들어 연산기호 이후로 숫자를 입력받기위해 초기화 한다.
