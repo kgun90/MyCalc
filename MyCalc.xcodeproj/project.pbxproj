@@ -17,10 +17,8 @@
 		3DFB170324309D1C000F9C1C /* Gun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAD2430981E00B362BA /* Gun.storyboard */; };
 		3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB32430986900B362BA /* Paduck.storyboard */; };
 		3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
-		82047CA72430980600B362BA /* LizhongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CA52430980600B362BA /* LizhongViewController.swift */; };
 		82047CAF2430981E00B362BA /* GunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* GunViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
-		82047CB824309DB600B362BA /* Lizhong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CA62430980600B362BA /* Lizhong.storyboard */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
 		82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */; };
 		82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */; };
@@ -39,8 +37,6 @@
 		3D60C9E123F4484800F9DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DFB16FB243092AB000F9C1C /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		82047CA52430980600B362BA /* LizhongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LizhongViewController.swift; sourceTree = "<group>"; };
-		82047CA62430980600B362BA /* Lizhong.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lizhong.storyboard; sourceTree = "<group>"; };
 		82047CAC2430981E00B362BA /* GunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunViewController.swift; sourceTree = "<group>"; };
 		82047CAE2430981E00B362BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun.storyboard; sourceTree = "<group>"; };
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
@@ -109,10 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				822A91BA24475D6A00122C1A /* btn.wav */,
-				82047CA62430980600B362BA /* Lizhong.storyboard */,
 				82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */,
 				82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */,
-				82047CA52430980600B362BA /* LizhongViewController.swift */,
 			);
 			path = lizhong;
 			sourceTree = "<group>";
@@ -204,7 +198,6 @@
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
 				3DFB170324309D1C000F9C1C /* Gun.storyboard in Resources */,
 				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
-				82047CB824309DB600B362BA /* Lizhong.storyboard in Resources */,
 				822A91BB24475D6A00122C1A /* btn.wav in Resources */,
 				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
 				F148674D24309AF700BDF162 /* GunViewController.swift in Resources */,
@@ -222,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
-				82047CA72430980600B362BA /* LizhongViewController.swift in Sources */,
 				11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */,
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
 				82047CAF2430981E00B362BA /* GunViewController.swift in Sources */,

@@ -38,6 +38,7 @@ struct ArthurCalcuatorViewModel {
     private struct PendingBinaryOperation {
         let firstOperand: Double
         let operation: (Double, Double) -> Double
+        
         func perform(with secoundOperand: Double) -> Double {
             return operation(firstOperand,secoundOperand)
         }
@@ -46,7 +47,7 @@ struct ArthurCalcuatorViewModel {
     /// 버튼명에 따라 알맞은 오페레이션 동작 매핑
     private var operations: [String: Operation] = [
         "AC":   .clear,
-        "+/-" : .unary({-$0}),
+        "+/-" : .unary({$0 * -1}),
         "%" :   .unary({$0 / 100}),
         "+" :   .binary( + ),
         "−" :   .binary( - ),

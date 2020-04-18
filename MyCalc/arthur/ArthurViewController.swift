@@ -29,11 +29,11 @@ class ArthurViewController: UIViewController {
             displayLabel.text = String(Int(newValue))
             
             // TODO: - 소수점 처리 우짜하지
-//            if Double(Int(newValue)) == newValue {
-//                displayLabel.text = String(Int(newValue))
-//            }else {
-//                displayLabel.text = String(newValue)
-//            }
+            if Double(Int(newValue)) == newValue {
+                displayLabel.text = String(Int(newValue))
+            }else {
+                displayLabel.text = String(newValue)
+            }
         }
     }
     
@@ -51,7 +51,6 @@ extension ArthurViewController {
             return
         }
     
-       
         if userIsInTyping {
              // '0' 입력하는 케이스 처리
             if digit == "0" && displayedText == "0" {
@@ -63,11 +62,11 @@ extension ArthurViewController {
             return
         }
        
-//        if digit == "." {
-//            displayLabel.text = "0."
-//        }else {
-//            displayLabel.text = digit
-//        }
+        if digit == "." {
+            displayLabel.text = "0."
+        }else {
+            displayLabel.text = digit
+        }
         userIsInTyping = true
     }
     
