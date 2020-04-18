@@ -15,10 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ogF-br-CfK">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ogF-br-CfK" userLabel="Calculator StackView">
                                 <rect key="frame" x="10" y="44" width="394" height="808"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHW-zo-62m">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHW-zo-62m" userLabel="Display Area">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="303"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s2E-6L-p9m">
@@ -53,6 +53,9 @@
                                                 <state key="normal" title="AC">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideOperationButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="OZC-oc-5nu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vQ-Cl-lIY" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="101" y="0.0" width="91" height="91"/>
@@ -61,6 +64,9 @@
                                                 <state key="normal" title="+/-">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideOperationButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="A6O-Kr-0Or"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1p-ye-kC3" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="91"/>
@@ -69,6 +75,9 @@
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideOperationButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="Eho-kL-VIn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0d-mo-Eqf" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="91"/>
@@ -77,6 +86,9 @@
                                                 <state key="normal" title="÷">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideOperationButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="5ND-R1-nAf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -90,6 +102,9 @@
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="4Jt-1W-Tdq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hil-Uh-un4" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="101" y="0.0" width="91" height="91"/>
@@ -98,6 +113,9 @@
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="tBs-u0-PTb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25P-lE-WLt" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="91"/>
@@ -106,6 +124,9 @@
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="QQh-I0-IJX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NL2-tT-3EU" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="91"/>
@@ -114,6 +135,9 @@
                                                 <state key="normal" title="×">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideOperationButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="X89-Ss-kJb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -127,6 +151,9 @@
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="7d5-28-h1I"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGY-hv-zXj" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="101" y="0.0" width="91" height="91"/>
@@ -135,6 +162,9 @@
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="sYN-U2-c7c"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rf-nZ-FbF" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="91"/>
@@ -143,14 +173,20 @@
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="kKK-5m-kbS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhO-Dr-Km4" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="91"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
-                                                <state key="normal" title="-">
+                                                <state key="normal" title="−">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideOperationButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="TA8-Tp-q0E"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -164,6 +200,9 @@
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="h9k-Ea-wLP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCc-qG-xfk" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="101" y="0.0" width="91" height="91"/>
@@ -172,6 +211,9 @@
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="Qmw-js-Eoy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFj-lR-K8Q" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="91"/>
@@ -180,6 +222,9 @@
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="Gmm-Vf-FEv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBb-zq-ezd" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="91"/>
@@ -188,6 +233,9 @@
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideOperationButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="Uj5-ey-vXL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -201,6 +249,9 @@
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="7UW-yv-8C5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnA-Nj-uYM" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="91"/>
@@ -209,6 +260,9 @@
                                                 <state key="normal" title=".">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideDigitButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="Oiy-sI-F4t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFp-7d-35r" customClass="ArthurCircleButton" customModule="MyCalc" customModuleProvider="target">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="91"/>
@@ -217,6 +271,9 @@
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toupUpInsideOperationButton:" destination="rs8-XB-dKG" eventType="touchUpInside" id="XET-rT-J64"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -242,6 +299,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="142-oq-lyg"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="s2E-6L-p9m" id="NLq-rC-Tav"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sy4-6h-13R" sceneMemberID="firstResponder"/>
             </objects>

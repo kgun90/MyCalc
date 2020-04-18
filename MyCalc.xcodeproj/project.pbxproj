@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115F715F244ACF7C001E273C /* ArthurCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */; };
 		11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B266D8243832AD00C88022 /* Arthur.storyboard */; };
 		11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B266DA2438330C00C88022 /* ArthurViewController.swift */; };
 		3D23B2CA2434565700852962 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurCalculatorViewModel.swift; sourceTree = "<group>"; };
 		11B266D8243832AD00C88022 /* Arthur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
 		11B266DA2438330C00C88022 /* ArthurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
 		3D60C9D023F4483F00F9DB34 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 			children = (
 				11B266D8243832AD00C88022 /* Arthur.storyboard */,
 				11B266DA2438330C00C88022 /* ArthurViewController.swift */,
+				115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */,
 			);
 			path = arthur;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
 				82047CAF2430981E00B362BA /* GunViewController.swift in Sources */,
 				82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */,
+				115F715F244ACF7C001E273C /* ArthurCalculatorViewModel.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
