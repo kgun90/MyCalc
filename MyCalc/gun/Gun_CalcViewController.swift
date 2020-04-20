@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GunViewController: UIViewController {
+class Gun_CalcViewController: UIViewController {
 
     @IBOutlet weak var calcResult: UILabel!
     @IBOutlet var numBtn: [UIButton]!

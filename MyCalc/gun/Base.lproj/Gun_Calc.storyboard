@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Gun View Controller-->
+        <!--Gun Calc View Controller-->
         <scene sceneID="R2M-uG-s6B">
             <objects>
-                <viewController storyboardIdentifier="GunViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sMH-ad-Pd3" customClass="GunViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Gun_CalcViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sMH-ad-Pd3" customClass="Gun_CalcViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aza-cC-um7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

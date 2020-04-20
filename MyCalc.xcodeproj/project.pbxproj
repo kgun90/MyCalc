@@ -13,16 +13,19 @@
 		3D23B2CA2434565700852962 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
+		3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D4C42244D9C910097BE70 /* Gun_GiphyViewController.swift */; };
+		3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7D4C43244D9C910097BE70 /* Gun_Giphy.storyboard */; };
 		3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB16FB243092AB000F9C1C /* main.storyboard */; };
-		3DFB170324309D1C000F9C1C /* Gun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAD2430981E00B362BA /* Gun.storyboard */; };
+		3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAD2430981E00B362BA /* Gun_Calc.storyboard */; };
 		3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB32430986900B362BA /* Paduck.storyboard */; };
 		3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
-		82047CAF2430981E00B362BA /* GunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* GunViewController.swift */; };
+		76446AA8BC6BFC0C946225F2 /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1FCA32F9F96383541E14F2 /* Pods_MyCalc.framework */; };
+		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
 		82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */; };
 		82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */; };
-		F148674D24309AF700BDF162 /* GunViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* GunViewController.swift */; };
+		F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,10 +38,15 @@
 		3D60C9DC23F4484800F9DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D60C9DF23F4484800F9DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D60C9E123F4484800F9DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D7D4C42244D9C910097BE70 /* Gun_GiphyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gun_GiphyViewController.swift; sourceTree = "<group>"; };
+		3D7D4C43244D9C910097BE70 /* Gun_Giphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gun_Giphy.storyboard; sourceTree = "<group>"; };
 		3DFB16FB243092AB000F9C1C /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		82047CAC2430981E00B362BA /* GunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunViewController.swift; sourceTree = "<group>"; };
-		82047CAE2430981E00B362BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun.storyboard; sourceTree = "<group>"; };
+		41800E1A7EE0008766F602F7 /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		68BD034AAC72D6FD15D96B63 /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
+		7C1FCA32F9F96383541E14F2 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun_CalcViewController.swift; sourceTree = "<group>"; };
+		82047CAE2430981E00B362BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun_Calc.storyboard; sourceTree = "<group>"; };
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
 		82047CB32430986900B362BA /* Paduck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck.storyboard; sourceTree = "<group>"; };
 		822A91BA24475D6A00122C1A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76446AA8BC6BFC0C946225F2 /* Pods_MyCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +82,8 @@
 				3D60C9D223F4483F00F9DB34 /* MyCalc */,
 				3D60C9D123F4483F00F9DB34 /* Products */,
 				82047CA4243097DD00B362BA /* Recovered References */,
+				F1C9C5C289ADD93DAE268BDB /* Pods */,
+				B8FB460EA518285EF21A0F29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +132,10 @@
 		82047CAB2430981E00B362BA /* gun */ = {
 			isa = PBXGroup;
 			children = (
-				82047CAC2430981E00B362BA /* GunViewController.swift */,
-				82047CAD2430981E00B362BA /* Gun.storyboard */,
+				3D7D4C43244D9C910097BE70 /* Gun_Giphy.storyboard */,
+				3D7D4C42244D9C910097BE70 /* Gun_GiphyViewController.swift */,
+				82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */,
+				82047CAD2430981E00B362BA /* Gun_Calc.storyboard */,
 			);
 			path = gun;
 			sourceTree = "<group>";
@@ -136,6 +149,24 @@
 			path = paduck;
 			sourceTree = "<group>";
 		};
+		B8FB460EA518285EF21A0F29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C1FCA32F9F96383541E14F2 /* Pods_MyCalc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1C9C5C289ADD93DAE268BDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41800E1A7EE0008766F602F7 /* Pods-MyCalc.debug.xcconfig */,
+				68BD034AAC72D6FD15D96B63 /* Pods-MyCalc.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +174,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D60C9E423F4484800F9DB34 /* Build configuration list for PBXNativeTarget "MyCalc" */;
 			buildPhases = (
+				02F2A1C36F8890C9B0471C8D /* [CP] Check Pods Manifest.lock */,
 				3D60C9CC23F4483F00F9DB34 /* Sources */,
 				3D60C9CD23F4483F00F9DB34 /* Frameworks */,
 				3D60C9CE23F4483F00F9DB34 /* Resources */,
@@ -194,13 +226,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */,
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
-				3DFB170324309D1C000F9C1C /* Gun.storyboard in Resources */,
+				3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */,
 				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
 				822A91BB24475D6A00122C1A /* btn.wav in Resources */,
 				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
-				F148674D24309AF700BDF162 /* GunViewController.swift in Resources */,
+				F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */,
 				82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */,
 				3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
@@ -208,6 +241,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02F2A1C36F8890C9B0471C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCalc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D60C9CC23F4483F00F9DB34 /* Sources */ = {
@@ -217,10 +275,11 @@
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
 				11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */,
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
-				82047CAF2430981E00B362BA /* GunViewController.swift in Sources */,
+				82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */,
 				82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */,
 				115F715F244ACF7C001E273C /* ArthurCalculatorViewModel.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
+				3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,12 +294,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		82047CAD2430981E00B362BA /* Gun.storyboard */ = {
+		82047CAD2430981E00B362BA /* Gun_Calc.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				82047CAE2430981E00B362BA /* Base */,
 			);
-			name = Gun.storyboard;
+			name = Gun_Calc.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,6 +421,7 @@
 		};
 		3D60C9E523F4484800F9DB34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41800E1A7EE0008766F602F7 /* Pods-MyCalc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +439,7 @@
 		};
 		3D60C9E623F4484800F9DB34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BD034AAC72D6FD15D96B63 /* Pods-MyCalc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
