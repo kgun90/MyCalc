@@ -1,0 +1,37 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.2.5",
+  "iOS" : [
+    {
+      "name" : "DeepDiff",
+      "hash" : "c2fe1b7d457b4b7350a4fac4ae74ecabd058b1cf9259ed77309270cf584a4b84",
+      "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+    },
+    {
+      "name" : "PINCache",
+      "hash" : "210f5ed26dedcb4e6bd7666bbf720846645ddf2c39e90844a5fb54ff9b828ccd"
+    },
+    {
+      "name" : "GiphyCoreSDK",
+      "hash" : "b00c69b51be887e582e5a528a6ef84dc50e8ff7e9600725f7deea9e4c6c11e14",
+      "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+    },
+    {
+      "name" : "GiphyUISDK",
+      "hash" : "4106387d43a9c909c84f8f16a2f36a344974bef57f46a617f8c5ff83e7606e62",
+      "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+    },
+    {
+      "name" : "WebP",
+      "hash" : "f9eb6b489a0a6db16cd3dc01141a9d37a452729c234a0268d516bccfc438d7e2"
+    }
+  ]
+}

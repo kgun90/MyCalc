@@ -8,6 +8,9 @@
 
 import Foundation
 import UIKit
+import GiphyUISDK
+//import GiphyCoreSDK
+
 
 class Gun_GiphyViewController: UIViewController {
 

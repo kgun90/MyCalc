@@ -11,6 +11,12 @@
 		11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B266D8243832AD00C88022 /* Arthur.storyboard */; };
 		11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B266DA2438330C00C88022 /* ArthurViewController.swift */; };
 		3D23B2CA2434565700852962 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
+		3D53A3B324502E7D0092EBB9 /* DeepDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3AE24502E7D0092EBB9 /* DeepDiff.framework */; };
+		3D53A3B424502E7D0092EBB9 /* GiphyCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3AF24502E7D0092EBB9 /* GiphyCoreSDK.framework */; };
+		3D53A3B524502E7D0092EBB9 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3B024502E7D0092EBB9 /* PINCache.framework */; };
+		3D53A3B624502E7D0092EBB9 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3B124502E7D0092EBB9 /* WebP.framework */; };
+		3D53A3B724502E7D0092EBB9 /* GiphyUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3B224502E7D0092EBB9 /* GiphyUISDK.framework */; };
+		3D53A3B924502E940092EBB9 /* OMSDK_Giphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3B824502E940092EBB9 /* OMSDK_Giphy.framework */; };
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
 		3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D4C42244D9C910097BE70 /* Gun_GiphyViewController.swift */; };
@@ -19,7 +25,6 @@
 		3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAD2430981E00B362BA /* Gun_Calc.storyboard */; };
 		3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB32430986900B362BA /* Paduck.storyboard */; };
 		3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
-		76446AA8BC6BFC0C946225F2 /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1FCA32F9F96383541E14F2 /* Pods_MyCalc.framework */; };
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
@@ -33,6 +38,12 @@
 		115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurCalculatorViewModel.swift; sourceTree = "<group>"; };
 		11B266D8243832AD00C88022 /* Arthur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
 		11B266DA2438330C00C88022 /* ArthurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
+		3D53A3AE24502E7D0092EBB9 /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepDiff.framework; path = Carthage/Build/iOS/DeepDiff.framework; sourceTree = "<group>"; };
+		3D53A3AF24502E7D0092EBB9 /* GiphyCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyCoreSDK.framework; path = Carthage/Build/iOS/GiphyCoreSDK.framework; sourceTree = "<group>"; };
+		3D53A3B024502E7D0092EBB9 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
+		3D53A3B124502E7D0092EBB9 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Carthage/Build/iOS/WebP.framework; sourceTree = "<group>"; };
+		3D53A3B224502E7D0092EBB9 /* GiphyUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyUISDK.framework; path = Carthage/Build/iOS/GiphyUISDK.framework; sourceTree = "<group>"; };
+		3D53A3B824502E940092EBB9 /* OMSDK_Giphy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMSDK_Giphy.framework; path = Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks/OMSDK_Giphy.framework; sourceTree = "<group>"; };
 		3D60C9D023F4483F00F9DB34 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D60C9DC23F4484800F9DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,7 +55,6 @@
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		41800E1A7EE0008766F602F7 /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		68BD034AAC72D6FD15D96B63 /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
-		7C1FCA32F9F96383541E14F2 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun_CalcViewController.swift; sourceTree = "<group>"; };
 		82047CAE2430981E00B362BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun_Calc.storyboard; sourceTree = "<group>"; };
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +69,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76446AA8BC6BFC0C946225F2 /* Pods_MyCalc.framework in Frameworks */,
+				3D53A3B924502E940092EBB9 /* OMSDK_Giphy.framework in Frameworks */,
+				3D53A3B324502E7D0092EBB9 /* DeepDiff.framework in Frameworks */,
+				3D53A3B424502E7D0092EBB9 /* GiphyCoreSDK.framework in Frameworks */,
+				3D53A3B524502E7D0092EBB9 /* PINCache.framework in Frameworks */,
+				3D53A3B624502E7D0092EBB9 /* WebP.framework in Frameworks */,
+				3D53A3B724502E7D0092EBB9 /* GiphyUISDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +167,12 @@
 		B8FB460EA518285EF21A0F29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C1FCA32F9F96383541E14F2 /* Pods_MyCalc.framework */,
+				3D53A3B824502E940092EBB9 /* OMSDK_Giphy.framework */,
+				3D53A3AE24502E7D0092EBB9 /* DeepDiff.framework */,
+				3D53A3AF24502E7D0092EBB9 /* GiphyCoreSDK.framework */,
+				3D53A3B224502E7D0092EBB9 /* GiphyUISDK.framework */,
+				3D53A3B024502E7D0092EBB9 /* PINCache.framework */,
+				3D53A3B124502E7D0092EBB9 /* WebP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,7 +183,6 @@
 				41800E1A7EE0008766F602F7 /* Pods-MyCalc.debug.xcconfig */,
 				68BD034AAC72D6FD15D96B63 /* Pods-MyCalc.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -178,6 +197,7 @@
 				3D60C9CC23F4483F00F9DB34 /* Sources */,
 				3D60C9CD23F4483F00F9DB34 /* Frameworks */,
 				3D60C9CE23F4483F00F9DB34 /* Resources */,
+				3D53A3BA24502FAA0092EBB9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -264,6 +284,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		3D53A3BA24502FAA0092EBB9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/DeepDiff.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -425,11 +464,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks",
+				);
 				INFOPLIST_FILE = MyCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kang.MyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -443,11 +488,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks",
+				);
 				INFOPLIST_FILE = MyCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kang.MyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

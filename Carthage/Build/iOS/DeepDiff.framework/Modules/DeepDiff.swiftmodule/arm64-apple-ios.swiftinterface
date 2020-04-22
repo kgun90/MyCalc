@@ -1,0 +1,97 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)
+// swift-module-flags: -target arm64-apple-ios8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DeepDiff
+import Foundation
+import Swift
+import UIKit
+public struct ChangeWithIndexPath {
+  public let inserts: [Foundation.IndexPath]
+  public let deletes: [Foundation.IndexPath]
+  public let replaces: [Foundation.IndexPath]
+  public let moves: [(from: Foundation.IndexPath, to: Foundation.IndexPath)]
+  public init(inserts: [Foundation.IndexPath], deletes: [Foundation.IndexPath], replaces: [Foundation.IndexPath], moves: [(from: Foundation.IndexPath, to: Foundation.IndexPath)])
+}
+public class IndexPathConverter {
+  public init()
+  public func convert<T>(changes: [DeepDiff.Change<T>], section: Swift.Int) -> DeepDiff.ChangeWithIndexPath
+  @objc deinit
+}
+public struct Insert<T> {
+  public let item: T
+  public let index: Swift.Int
+}
+public struct Delete<T> {
+  public let item: T
+  public let index: Swift.Int
+}
+public struct Replace<T> {
+  public let oldItem: T
+  public let newItem: T
+  public let index: Swift.Int
+}
+public struct Move<T> {
+  public let item: T
+  public let fromIndex: Swift.Int
+  public let toIndex: Swift.Int
+}
+public enum Change<T> {
+  case insert(DeepDiff.Insert<T>)
+  case delete(DeepDiff.Delete<T>)
+  case replace(DeepDiff.Replace<T>)
+  case move(DeepDiff.Move<T>)
+  public var insert: DeepDiff.Insert<T>? {
+    get
+  }
+  public var delete: DeepDiff.Delete<T>? {
+    get
+  }
+  public var replace: DeepDiff.Replace<T>? {
+    get
+  }
+  public var move: DeepDiff.Move<T>? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class Heckel<T> where T : DeepDiff.DiffAware {
+  final public func diff(old: [T], new: [T]) -> [DeepDiff.Change<T>]
+  @objc deinit
+}
+public protocol DiffAware {
+  associatedtype DiffId : Swift.Hashable
+  var diffId: Self.DiffId { get }
+  static func compareContent(_ a: Self, _ b: Self) -> Swift.Bool
+}
+extension DiffAware where Self : Swift.Hashable {
+  public var diffId: Self {
+    get
+  }
+  public static func compareContent(_ a: Self, _ b: Self) -> Swift.Bool
+}
+extension Int : DeepDiff.DiffAware {
+  public typealias DiffId = Swift.Int
+}
+extension String : DeepDiff.DiffAware {
+  public typealias DiffId = Swift.String
+}
+extension Character : DeepDiff.DiffAware {
+  public typealias DiffId = Swift.Character
+}
+extension UUID : DeepDiff.DiffAware {
+  public typealias DiffId = Foundation.UUID
+}
+extension UICollectionView {
+  public func reload<T>(changes: [DeepDiff.Change<T>], section: Swift.Int = 0, updateData: () -> Swift.Void, completion: ((Swift.Bool) -> Swift.Void)? = nil) where T : DeepDiff.DiffAware
+}
+extension Array {
+  public func executeIfPresent(_ closure: ([Element]) -> Swift.Void)
+}
+public func diff<T>(old: [T], new: [T]) -> [DeepDiff.Change<T>] where T : DeepDiff.DiffAware
+public func preprocess<T>(old: [T], new: [T]) -> [DeepDiff.Change<T>]?
+final public class WagnerFischer<T> where T : DeepDiff.DiffAware {
+  public init(reduceMove: Swift.Bool = false)
+  final public func diff(old: [T], new: [T]) -> [DeepDiff.Change<T>]
+  @objc deinit
+}
+extension UITableView {
+  public func reload<T>(changes: [DeepDiff.Change<T>], section: Swift.Int = 0, insertionAnimation: UIKit.UITableView.RowAnimation = .automatic, deletionAnimation: UIKit.UITableView.RowAnimation = .automatic, replacementAnimation: UIKit.UITableView.RowAnimation = .automatic, updateData: () -> Swift.Void, completion: ((Swift.Bool) -> Swift.Void)? = nil) where T : DeepDiff.DiffAware
+}
