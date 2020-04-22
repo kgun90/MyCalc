@@ -20,9 +20,8 @@
       "hash" : "210f5ed26dedcb4e6bd7666bbf720846645ddf2c39e90844a5fb54ff9b828ccd"
     },
     {
-      "name" : "GiphyCoreSDK",
-      "hash" : "b00c69b51be887e582e5a528a6ef84dc50e8ff7e9600725f7deea9e4c6c11e14",
-      "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+      "name" : "WebP",
+      "hash" : "f9eb6b489a0a6db16cd3dc01141a9d37a452729c234a0268d516bccfc438d7e2"
     },
     {
       "name" : "GiphyUISDK",
@@ -30,8 +29,9 @@
       "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
     },
     {
-      "name" : "WebP",
-      "hash" : "f9eb6b489a0a6db16cd3dc01141a9d37a452729c234a0268d516bccfc438d7e2"
+      "name" : "GiphyCoreSDK",
+      "hash" : "b00c69b51be887e582e5a528a6ef84dc50e8ff7e9600725f7deea9e4c6c11e14",
+      "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
     }
   ]
 }
