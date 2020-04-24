@@ -26,8 +26,8 @@ class MainViewController: UIViewController {
             viewControllerIdentifier = "ArthurViewController"
         case 1:
         // "Paduck"의 뷰 컨트롤러로 이동
-            storyBoardName = "Paduck"
-            viewControllerIdentifier = "PaduckViewController"
+            storyBoardName = "Paduck_Giphy"
+            viewControllerIdentifier = "Paduck_GiphyViewController"
             break
         case 2:
         // "Gun"의 뷰 컨트롤러로 이동
