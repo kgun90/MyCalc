@@ -4,19 +4,61 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Gun Giphy View Controller-->
         <scene sceneID="BTd-j9-qMK">
             <objects>
-                <viewController storyboardIdentifier="Gun_GiphyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="myT-AB-ge2" customClass="Gun_GiphyViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Gun_GiphyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="myT-AB-ge2" customClass="Gun_GiphyViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1qa-rF-vzH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MoU-7v-xkk">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="W1m-5s-u9G"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="q8o-0i-q1t" customClass="CustomCell" customModule="MyCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zci-QI-nru">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ANm-KZ-rHl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ANm-KZ-rHl" firstAttribute="leading" secondItem="zci-QI-nru" secondAttribute="leading" id="6UJ-ur-g63"/>
+                                                <constraint firstItem="ANm-KZ-rHl" firstAttribute="top" secondItem="zci-QI-nru" secondAttribute="top" id="Sv6-hM-fgI"/>
+                                                <constraint firstAttribute="trailing" secondItem="ANm-KZ-rHl" secondAttribute="trailing" id="qro-64-Kdp"/>
+                                                <constraint firstAttribute="bottom" secondItem="ANm-KZ-rHl" secondAttribute="bottom" id="s9b-rl-qIP"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="gifImage" destination="ANm-KZ-rHl" id="hm4-9Q-kaT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MoU-7v-xkk" firstAttribute="top" secondItem="Jsi-oh-fZ1" secondAttribute="top" constant="100" id="Bds-VY-1Ka"/>
+                            <constraint firstItem="Jsi-oh-fZ1" firstAttribute="bottom" secondItem="MoU-7v-xkk" secondAttribute="bottom" id="HRt-MI-2fe"/>
+                            <constraint firstItem="Jsi-oh-fZ1" firstAttribute="trailing" secondItem="MoU-7v-xkk" secondAttribute="trailing" id="Ie1-QI-ADq"/>
+                            <constraint firstItem="MoU-7v-xkk" firstAttribute="centerX" secondItem="1qa-rF-vzH" secondAttribute="centerX" id="TVh-9n-ZiX"/>
+                            <constraint firstItem="MoU-7v-xkk" firstAttribute="leading" secondItem="Jsi-oh-fZ1" secondAttribute="leading" id="z45-am-lEt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jsi-oh-fZ1"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="MoU-7v-xkk" id="RlN-Uy-vux"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5M-YQ-vhi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,7 +16,8 @@
 		3D53A3D624503D640092EBB9 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D124503D640092EBB9 /* WebP.framework */; };
 		3D53A3D724503D640092EBB9 /* GiphyCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D224503D640092EBB9 /* GiphyCoreSDK.framework */; };
 		3D53A3D824503D640092EBB9 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D324503D640092EBB9 /* PINCache.framework */; };
-		3D53A3DA24503D750092EBB9 /* OMSDK_Giphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D924503D750092EBB9 /* OMSDK_Giphy.framework */; };
+		3D53A3DF2450407F0092EBB9 /* OMSDK_Giphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3DE2450407F0092EBB9 /* OMSDK_Giphy.framework */; };
+		3D53A3E3245418EC0092EBB9 /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D53A3E2245418EC0092EBB9 /* File.strings */; };
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
 		3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D4C42244D9C910097BE70 /* Gun_GiphyViewController.swift */; };
@@ -44,6 +45,9 @@
 		3D53A3D224503D640092EBB9 /* GiphyCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyCoreSDK.framework; path = Carthage/Build/iOS/GiphyCoreSDK.framework; sourceTree = "<group>"; };
 		3D53A3D324503D640092EBB9 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		3D53A3D924503D750092EBB9 /* OMSDK_Giphy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMSDK_Giphy.framework; path = Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks/OMSDK_Giphy.framework; sourceTree = "<group>"; };
+		3D53A3DC245040530092EBB9 /* OMSDK_Giphy */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = OMSDK_Giphy; path = Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks/OMSDK_Giphy.framework/OMSDK_Giphy; sourceTree = "<group>"; };
+		3D53A3DE2450407F0092EBB9 /* OMSDK_Giphy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMSDK_Giphy.framework; path = "Carthage/Build/iOS/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy/OMSDK_Giphy.framework"; sourceTree = "<group>"; };
+		3D53A3E2245418EC0092EBB9 /* File.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = File.strings; sourceTree = "<group>"; };
 		3D60C9D023F4483F00F9DB34 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D60C9DC23F4484800F9DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D53A3DA24503D750092EBB9 /* OMSDK_Giphy.framework in Frameworks */,
+				3D53A3DF2450407F0092EBB9 /* OMSDK_Giphy.framework in Frameworks */,
 				3D53A3D424503D640092EBB9 /* GiphyUISDK.framework in Frameworks */,
 				3D53A3D524503D640092EBB9 /* DeepDiff.framework in Frameworks */,
 				3D53A3D624503D640092EBB9 /* WebP.framework in Frameworks */,
@@ -121,6 +125,7 @@
 				3D60C9E123F4484800F9DB34 /* Info.plist */,
 				3DFB16FB243092AB000F9C1C /* main.storyboard */,
 				3DFB16FD2430937F000F9C1C /* MainViewController.swift */,
+				3D53A3E2245418EC0092EBB9 /* File.strings */,
 			);
 			path = MyCalc;
 			sourceTree = "<group>";
@@ -165,6 +170,8 @@
 		B8FB460EA518285EF21A0F29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D53A3DE2450407F0092EBB9 /* OMSDK_Giphy.framework */,
+				3D53A3DC245040530092EBB9 /* OMSDK_Giphy */,
 				3D53A3D924503D750092EBB9 /* OMSDK_Giphy.framework */,
 				3D53A3D024503D630092EBB9 /* DeepDiff.framework */,
 				3D53A3D224503D640092EBB9 /* GiphyCoreSDK.framework */,
@@ -249,6 +256,7 @@
 				822A91BB24475D6A00122C1A /* btn.wav in Resources */,
 				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
 				F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */,
+				3D53A3E3245418EC0092EBB9 /* File.strings in Resources */,
 				82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */,
 				3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
@@ -441,11 +449,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy",
 				);
 				INFOPLIST_FILE = MyCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks/OMSDK_Giphy.framework",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kang.MyCalc;
@@ -465,11 +478,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy",
 				);
 				INFOPLIST_FILE = MyCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks/OMSDK_Giphy.framework",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kang.MyCalc;
