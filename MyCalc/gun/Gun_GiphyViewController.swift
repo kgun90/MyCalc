@@ -20,8 +20,12 @@ class Gun_GiphyViewController: UIViewController {
     
     let giphy = GiphyViewController()
     let gridController = GiphyGridController()
-    let searchCotroller : UISearchController = UISearchController(searchResultsController: nil)
+    let searchController: UISearchController = UISearchController(searchResultsController: nil)
     let searchContainerView: UIView = UIView(frame: CGRect.zero)
+    
+    var screenSize : CGRect = UIScreen.main.bounds
+  
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +33,10 @@ class Gun_GiphyViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         let flowLayout = UICollectionViewFlowLayout()
-        
-        flowLayout.itemSize = CGSize.init(width: 100, height: 100)
+
+        flowLayout.itemSize = CGSize.init(width: screenSize.width/4, height: screenSize.height/5)
         collectionView.collectionViewLayout = flowLayout
+        
     }
        
    override func viewDidAppear(_ animated: Bool) {
@@ -39,13 +44,32 @@ class Gun_GiphyViewController: UIViewController {
         giphy.theme = .defaultSetting     // 테마설정 automatic(폰설정에 맞춰자동?), dark, light, default가 있음
         giphy.layout = .carousel  // 레이아웃 타입 설정, waterfall(세로),carousel(가로), defaultsetting(기본설정)
         giphy.mediaTypeConfig = [.gifs, .stickers, .emoji] // 표시할 미디어 타입을 설정, 원하는 것만 표시되게 설정가능, 이모지는 레이아웃에서 가로설정 불가
-       // present(giphy, animated: true, completion: nil)
+//       present(giphy, animated: true, completion: nil)
     }
-    @IBOutlet weak var collectionView: UICollectionView!
     override func loadView() {
         super.loadView()
         self.title = NSLocalizedString("hi", comment: "Giphy")
         
+        searchController.searchBar.placeholder = NSLocalizedString("Search GIFs", comment: "The placeholder string for the Giphy search field")
+       //searchController.searchResultsUpdater = self
+       //searchController.dimsBackgroundDuringPresentation = false
+       searchController.definesPresentationContext = false
+       searchController.hidesNavigationBarDuringPresentation = false
+       //searchController.delegate = self
+        
+        searchContainerView.backgroundColor = UIColor.clear
+        searchContainerView.translatesAutoresizingMaskIntoConstraints = false
+        searchContainerView.addSubview(searchController.searchBar)
+        
+        self.view.addSubview(searchContainerView)
+        
+        NSLayoutConstraint.activate([
+                       searchContainerView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+                       searchContainerView.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor),
+                       searchContainerView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+                       searchContainerView.heightAnchor.constraint(equalToConstant: 44.0),
+                    
+       ])
     }
     
 }
@@ -60,11 +84,16 @@ extension Gun_GiphyViewController : UICollectionViewDataSource, UICollectionView
         cell.gifImage.image = UIImage.init(named: "dummy_\(indexPath.row + 1)")
         return cell
     }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        print("로그 : \(collectionView.bounds.width/2)")
-//        return CGSize.init(width: 100, height: 100)
-//
-//
-//    }
+
     
 }
+
+//extension Gun_GiphyViewController : UISearchControllerDelegate, UISearchResultsUpdating {
+//    func updateSearchResults(for searchController: UISearchController) {
+//        <#code#>
+//    }
+//
+//    func willPresentSearchController(_ searchController: UISearchController) {
+//        <#code#>
+//    }
+//}
