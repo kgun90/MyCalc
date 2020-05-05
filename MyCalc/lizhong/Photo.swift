@@ -38,11 +38,9 @@ struct Photo {
         }
         for dictionary in photosFromPlist {
             if let photo = Photo(dictionary: dictionary) {
-                print(photo.comment)
                 photos.append(photo)
             }
         }
-        print(photos.count)
         return photos
     }
 }
