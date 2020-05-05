@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lizhong Giphy View Controller-->
+        <scene sceneID="0DR-PM-IVp">
+            <objects>
+                <collectionViewController storyboardIdentifier="LizhongGiphyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3sg-SS-IlW" customClass="LizhongGiphyViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="n1Z-iZ-azN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewLayout key="collectionViewLayout" id="y3W-4W-F9R" customClass="CollectionViewLayout" customModule="MyCalc" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="5eI-YI-LpM" customClass="CollectionViewCell" customModule="MyCalc" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ck9-c7-sA4" userLabel="Container View">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2nm-CO-d1P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="131.5"/>
+                                                    <color key="backgroundColor" red="0.048418425020000003" green="0.36159920690000003" blue="0.16384336350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-GY-Yik" userLabel="Caption Label">
+                                                    <rect key="frame" x="4" y="141.5" width="172" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s00-fo-dUJ" userLabel="Comment Label">
+                                                    <rect key="frame" x="4" y="158" width="172" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.048418425020000003" green="0.36159920690000003" blue="0.16384336350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="2nm-CO-d1P" firstAttribute="leading" secondItem="ck9-c7-sA4" secondAttribute="leading" id="62w-Kf-HW1"/>
+                                                <constraint firstItem="TOC-GY-Yik" firstAttribute="top" secondItem="2nm-CO-d1P" secondAttribute="bottom" constant="10" id="Bzj-Cd-cFm"/>
+                                                <constraint firstItem="TOC-GY-Yik" firstAttribute="leading" secondItem="ck9-c7-sA4" secondAttribute="leading" constant="4" id="CQs-80-4dP"/>
+                                                <constraint firstItem="s00-fo-dUJ" firstAttribute="leading" secondItem="ck9-c7-sA4" secondAttribute="leading" constant="4" id="CaH-P7-OpV"/>
+                                                <constraint firstItem="2nm-CO-d1P" firstAttribute="top" secondItem="ck9-c7-sA4" secondAttribute="top" id="GOo-nl-EsF"/>
+                                                <constraint firstAttribute="trailing" secondItem="s00-fo-dUJ" secondAttribute="trailing" constant="4" id="Ki0-fJ-Hcd"/>
+                                                <constraint firstAttribute="trailing" secondItem="TOC-GY-Yik" secondAttribute="trailing" constant="4" id="MfH-fV-6vU"/>
+                                                <constraint firstAttribute="trailing" secondItem="2nm-CO-d1P" secondAttribute="trailing" id="WWt-Jv-ERr"/>
+                                                <constraint firstAttribute="bottom" secondItem="s00-fo-dUJ" secondAttribute="bottom" constant="10" id="XzI-Ti-CHq"/>
+                                                <constraint firstItem="s00-fo-dUJ" firstAttribute="top" secondItem="TOC-GY-Yik" secondAttribute="bottom" constant="2" id="scB-Ve-YIa"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.048418425020000003" green="0.36159920690000003" blue="0.16384336350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ck9-c7-sA4" secondAttribute="bottom" id="XIf-32-iY5"/>
+                                    <constraint firstAttribute="trailing" secondItem="ck9-c7-sA4" secondAttribute="trailing" id="ZEV-0v-SdA"/>
+                                    <constraint firstItem="ck9-c7-sA4" firstAttribute="top" secondItem="5eI-YI-LpM" secondAttribute="top" id="dIE-ah-c0d"/>
+                                    <constraint firstItem="ck9-c7-sA4" firstAttribute="leading" secondItem="5eI-YI-LpM" secondAttribute="leading" id="w6t-sL-yjQ"/>
+                                </constraints>
+                                <size key="customSize" width="180" height="180"/>
+                                <connections>
+                                    <outlet property="captionLabel" destination="TOC-GY-Yik" id="0oj-3G-ZIe"/>
+                                    <outlet property="commentLabel" destination="s00-fo-dUJ" id="FAZ-7x-XzJ"/>
+                                    <outlet property="containerView" destination="ck9-c7-sA4" id="DJH-jI-qIp"/>
+                                    <outlet property="imageView" destination="2nm-CO-d1P" id="oxc-Zz-lCw"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="3sg-SS-IlW" id="oU0-WL-Wpw"/>
+                            <outlet property="delegate" destination="3sg-SS-IlW" id="be8-Vh-6C2"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbw-Rj-jbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218.84057971014494" y="171.42857142857142"/>
+        </scene>
+    </scenes>
+</document>
