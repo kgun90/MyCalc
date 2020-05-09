@@ -8,7 +8,8 @@
 
 import UIKit
 
-//protocol??
+//heightForPhotoAtIndexPath만 쓸 건데 모든 접근을 가능하게 할 필요는 없으니까 결국
+//protocol쪽에서 정의한 메서드만 구현할 수 있도록 하는 것. viewController에서 쓰게 끔
 protocol CollectionViewLayoutDelegate: class {
     // image의 height
     func collectionView(_ collectionView:UICollectionView, heightForPhotoAtIndexPath indexPath:IndexPath) -> CGFloat
@@ -20,7 +21,7 @@ class CollectionViewLayout: UICollectionViewLayout {
     
     // property 설정
     fileprivate var numberOfColumns = 2
-    fileprivate var cellPadding: CGFloat = 6
+    fileprivate var cellPadding: CGFloat = 4
     
     // attributes cache arrary
     fileprivate var cache = [UICollectionViewLayoutAttributes]()
@@ -28,15 +29,20 @@ class CollectionViewLayout: UICollectionViewLayout {
     // 내용물 높이와 크기
     fileprivate var contentHeight: CGFloat = 0
     
+    
+    //if let 보다 예외처리에 대한 여러가지의 변수 연산이 필요할 때는 guard let이 더 쓰기 편할 듯
     fileprivate var contentWidth: CGFloat {
         guard let collectionView = collectionView else {
             return 0
         }
+        
+        //contentInset은 safe area 또는 스크롤뷰 모서리에 삽입되는 사용자 지정 거리
         let insets = collectionView.contentInset
+        //전체 width에서 좌우 insets 거리를 빼 줘야 안에 들어갈 수 있는 width가 나옴
         return collectionView.bounds.width - (insets.left + insets.right)
     }
     
-    //cgfloat and cgsize?
+    //CGSize는 너비와 높이 값을 포함하는 구조체
     override var collectionViewContentSize: CGSize {
         return CGSize(width: contentWidth, height: contentHeight)
     }
@@ -47,7 +53,7 @@ class CollectionViewLayout: UICollectionViewLayout {
             return
         }
         
-        // 모든 컬럼의 x 보정값 계산과 max Y의 보정값 계산
+        // 한 줄에 몇개의 아이템이 오는지 그것으로 width 결정
         let columnWidth = contentWidth / CGFloat(numberOfColumns)
         var xOffset = [CGFloat]()
         for column in 0 ..< numberOfColumns {
@@ -63,7 +69,7 @@ class CollectionViewLayout: UICollectionViewLayout {
             // delegate에게 그림의 높이와 cell frame을 계산
             
             let photoHeight = delegate.collectionView(collectionView, heightForPhotoAtIndexPath: indexPath)
-            let height = cellPadding * 2 + photoHeight
+            let height = cellPadding * 1 + photoHeight
             let frame = CGRect(x: xOffset[column], y: yOffset[column], width: columnWidth, height: height)
             let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
             
@@ -80,7 +86,7 @@ class CollectionViewLayout: UICollectionViewLayout {
         }
     }
     
-    //CGRect 꼭 알아야할듯
+    //CGRect는 origin, 즉 사각형의 위치까지도 포함하는 구조체임
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         var visibleLayoutAttributes = [UICollectionViewLayoutAttributes]()
         

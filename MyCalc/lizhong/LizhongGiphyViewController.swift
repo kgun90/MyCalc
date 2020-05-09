@@ -70,7 +70,7 @@ extension LizhongGiphyViewController {
     }
 }
 
-//높이는 항상 프로토콜을 준수하라는 건가
+//delegate pattern에서 흔히 볼 수 있는 protocol 
 extension LizhongGiphyViewController : CollectionViewLayoutDelegate {
     
     
