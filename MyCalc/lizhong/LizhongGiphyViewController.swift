@@ -11,11 +11,14 @@ import Foundation
 
 class LizhongGiphyViewController: UICollectionViewController {
     
+    
+    //등록된 photo list
     var photos = Photo.allPhotos()
     
-    //uistatusbarstyle 은 무엇?
+    //uistatusbarstyle : 화면 최 상단의 bar. darkcontent, lightcontent에 따라 흰색, 검정으로 변해야 할 것 같은데
+    //안 변함
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
+        return UIStatusBarStyle.darkContent
     }
     
     override func viewDidLoad() {
