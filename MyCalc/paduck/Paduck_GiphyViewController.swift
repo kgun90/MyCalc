@@ -7,14 +7,98 @@
 //
 
 import UIKit
-
-class __Paduck_GiphyViewController: UIViewController {
-    override func viewDidLoad() {
-        
-    }
-}
+import Foundation
 
 class Paduck_GiphyViewController: UIViewController {
+    
+    let API_KEY = "GySNZZrCfAWOl4WLuhrPUhyCHgQLGwjz"
+    let requestString = "https://api.giphy.com/v1/gifs/search"
+    
+    @IBOutlet var collectionView: UICollectionView!
+    
+    let photos = Photo.allPhotos()
+    
+    override func viewDidLoad() {
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.reloadData()
+        
+        let reqStr = "\(requestString)?api_key=\(API_KEY)&q=똥"
+        let reqStrEncoded = reqStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        guard let _reqStrEncoded = reqStrEncoded else {
+            return
+        }
+        
+        if let requestURL = URL(string: _reqStrEncoded) {
+            var request = URLRequest(url: requestURL)
+            request.httpMethod = "GET"
+            print("url: \(requestURL)")
+            let session = URLSession(configuration: .default)
+            let task = session.dataTask(with: request) { (data, response, error) in
+                print(error)
+                print(response)
+                print(data)
+            }
+            
+            task.resume()
+        } else {
+            print("실패")
+        }
+    }
+    
+    
+}
+
+extension Paduck_GiphyViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photos.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath)
+        
+        if let paduckCell = cell as? PaduckCustumCell {
+            paduckCell.imageView.image = photos[indexPath.item].image
+        }
+        return cell
+    }
+    
+    
+}
+
+extension Paduck_GiphyViewController {
+//    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return photos.count
+//    }
+//
+//    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath)
+//        if let collectionViewCell = cell as? CollectionViewCell {
+//            collectionViewCell.photo = photos[indexPath.item]
+//        }
+//        return cell
+//    }
+}
+
+extension Paduck_GiphyViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return photos[indexPath.item].image.size
+    }
+//    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+//        return photos[indexPath.item].image.size.height
+//    }
+}
+
+class PaduckCustumCell: UICollectionViewCell {
+    @IBOutlet var imageView: UIImageView!
+    
+    
+}
+
+class __Paduck_GiphyViewController: UIViewController {
     
     let API_KEY = "GySNZZrCfAWOl4WLuhrPUhyCHgQLGwjz"
     let requestString = "https://api.giphy.com/v1/gifs/search"
