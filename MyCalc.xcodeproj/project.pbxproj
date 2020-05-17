@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,19 @@
 		3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
 		75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */; };
 		75519D592470FEC3002D01E9 /* Paduck_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */; };
+		75519D792470FFAB002D01E9 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D5C2470FFAB002D01E9 /* WaterfallLayout.swift */; };
+		75519D7A2470FFAB002D01E9 /* RelamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D5E2470FFAB002D01E9 /* RelamManager.swift */; };
+		75519D7B2470FFAB002D01E9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D612470FFAB002D01E9 /* SearchViewController.swift */; };
+		75519D7C2470FFAB002D01E9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D622470FFAB002D01E9 /* SearchViewModel.swift */; };
+		75519D7D2470FFAB002D01E9 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D642470FFAB002D01E9 /* SearchCell.swift */; };
+		75519D7E2470FFAB002D01E9 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D652470FFAB002D01E9 /* SearchModel.swift */; };
+		75519D7F2470FFAB002D01E9 /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D672470FFAB002D01E9 /* ImageDetailViewModel.swift */; };
+		75519D802470FFAB002D01E9 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D682470FFAB002D01E9 /* ImageDetailViewController.swift */; };
+		75519D812470FFAB002D01E9 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D6A2470FFAB002D01E9 /* FavoriteButton.swift */; };
+		75519D822470FFAB002D01E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D6C2470FFAB002D01E9 /* ViewController.swift */; };
+		75519D852470FFAB002D01E9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D712470FFAB002D01E9 /* SearchView.swift */; };
+		75519D892470FFAB002D01E9 /* SearchGifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */; };
+		75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D782470FFAB002D01E9 /* SearchGif.swift */; };
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
@@ -41,6 +54,7 @@
 		82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367C246054C400072002 /* LizhongGiphy.storyboard */; };
 		82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */; };
 		82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */; };
+		85D181B5DC0CE1ABAD11F980 /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F0944C1D96CA7A8B722FD6 /* Pods_MyCalc.framework */; };
 		F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +63,8 @@
 		115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurCalculatorViewModel.swift; sourceTree = "<group>"; };
 		11B266D8243832AD00C88022 /* Arthur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
 		11B266DA2438330C00C88022 /* ArthurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
+		13002DCE1DE300270614E672 /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
+		2768DC87E9617573A17D027A /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyUISDK.framework; path = Carthage/Build/iOS/GiphyUISDK.framework; sourceTree = "<group>"; };
 		3D53A3D024503D630092EBB9 /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepDiff.framework; path = Carthage/Build/iOS/DeepDiff.framework; sourceTree = "<group>"; };
 		3D53A3D124503D640092EBB9 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Carthage/Build/iOS/WebP.framework; sourceTree = "<group>"; };
@@ -69,6 +85,19 @@
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck_Giphy.storyboard; sourceTree = "<group>"; };
 		75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paduck_GiphyViewController.swift; sourceTree = "<group>"; };
+		75519D5C2470FFAB002D01E9 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		75519D5E2470FFAB002D01E9 /* RelamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelamManager.swift; sourceTree = "<group>"; };
+		75519D612470FFAB002D01E9 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		75519D622470FFAB002D01E9 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		75519D642470FFAB002D01E9 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		75519D652470FFAB002D01E9 /* SearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		75519D672470FFAB002D01E9 /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
+		75519D682470FFAB002D01E9 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		75519D6A2470FFAB002D01E9 /* FavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		75519D6C2470FFAB002D01E9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75519D712470FFAB002D01E9 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGifNetwork.swift; sourceTree = "<group>"; };
+		75519D782470FFAB002D01E9 /* SearchGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGif.swift; sourceTree = "<group>"; };
 		82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun_CalcViewController.swift; sourceTree = "<group>"; };
 		82047CAE2430981E00B362BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun_Calc.storyboard; sourceTree = "<group>"; };
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +113,7 @@
 		82DA367C246054C400072002 /* LizhongGiphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongGiphy.storyboard; sourceTree = "<group>"; };
 		82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongCal.storyboard; sourceTree = "<group>"; };
 		82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCalViewController.swift; sourceTree = "<group>"; };
+		E0F0944C1D96CA7A8B722FD6 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +127,7 @@
 				3D53A3D624503D640092EBB9 /* WebP.framework in Frameworks */,
 				3D53A3D724503D640092EBB9 /* GiphyCoreSDK.framework in Frameworks */,
 				3D53A3D824503D640092EBB9 /* PINCache.framework in Frameworks */,
+				85D181B5DC0CE1ABAD11F980 /* Pods_MyCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,9 +137,9 @@
 		11B266D72438329B00C88022 /* arthur */ = {
 			isa = PBXGroup;
 			children = (
+				75519D8B24710581002D01E9 /* Calculator */,
+				75519D5A2470FF9A002D01E9 /* Giphy */,
 				11B266D8243832AD00C88022 /* Arthur.storyboard */,
-				11B266DA2438330C00C88022 /* ArthurViewController.swift */,
-				115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */,
 			);
 			path = arthur;
 			sourceTree = "<group>";
@@ -148,6 +179,131 @@
 				3D53A3E2245418EC0092EBB9 /* File.strings */,
 			);
 			path = MyCalc;
+			sourceTree = "<group>";
+		};
+		75519D5A2470FF9A002D01E9 /* Giphy */ = {
+			isa = PBXGroup;
+			children = (
+				75519D772470FFAB002D01E9 /* Entity */,
+				75519D5B2470FFAB002D01E9 /* Extension */,
+				75519D752470FFAB002D01E9 /* Networking */,
+				75519D5F2470FFAB002D01E9 /* Presentation */,
+			);
+			path = Giphy;
+			sourceTree = "<group>";
+		};
+		75519D5B2470FFAB002D01E9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				75519D5C2470FFAB002D01E9 /* WaterfallLayout.swift */,
+				75519D5D2470FFAB002D01E9 /* Realm */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		75519D5D2470FFAB002D01E9 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				75519D5E2470FFAB002D01E9 /* RelamManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		75519D5F2470FFAB002D01E9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				75519D602470FFAB002D01E9 /* Search */,
+				75519D662470FFAB002D01E9 /* Detail */,
+				75519D6B2470FFAB002D01E9 /* UniversalComponent */,
+				75519D6D2470FFAB002D01E9 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		75519D602470FFAB002D01E9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				75519D612470FFAB002D01E9 /* SearchViewController.swift */,
+				75519D622470FFAB002D01E9 /* SearchViewModel.swift */,
+				75519D632470FFAB002D01E9 /* Components */,
+				75519D652470FFAB002D01E9 /* SearchModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		75519D632470FFAB002D01E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75519D642470FFAB002D01E9 /* SearchCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		75519D662470FFAB002D01E9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				75519D672470FFAB002D01E9 /* ImageDetailViewModel.swift */,
+				75519D682470FFAB002D01E9 /* ImageDetailViewController.swift */,
+				75519D692470FFAB002D01E9 /* Components */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		75519D692470FFAB002D01E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75519D6A2470FFAB002D01E9 /* FavoriteButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		75519D6B2470FFAB002D01E9 /* UniversalComponent */ = {
+			isa = PBXGroup;
+			children = (
+				75519D6C2470FFAB002D01E9 /* ViewController.swift */,
+			);
+			path = UniversalComponent;
+			sourceTree = "<group>";
+		};
+		75519D6D2470FFAB002D01E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				75519D6F2470FFAB002D01E9 /* Components */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		75519D6F2470FFAB002D01E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75519D712470FFAB002D01E9 /* SearchView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		75519D752470FFAB002D01E9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		75519D772470FFAB002D01E9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				75519D782470FFAB002D01E9 /* SearchGif.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		75519D8B24710581002D01E9 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				11B266DA2438330C00C88022 /* ArthurViewController.swift */,
+				115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		82047C9F243091A900B362BA /* lizhong */ = {
@@ -216,6 +372,7 @@
 				3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */,
 				3D53A3D324503D640092EBB9 /* PINCache.framework */,
 				3D53A3D124503D640092EBB9 /* WebP.framework */,
+				E0F0944C1D96CA7A8B722FD6 /* Pods_MyCalc.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,6 +380,8 @@
 		F1C9C5C289ADD93DAE268BDB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				2768DC87E9617573A17D027A /* Pods-MyCalc.debug.xcconfig */,
+				13002DCE1DE300270614E672 /* Pods-MyCalc.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -234,10 +393,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D60C9E423F4484800F9DB34 /* Build configuration list for PBXNativeTarget "MyCalc" */;
 			buildPhases = (
+				812F58634FD252EF0946770B /* [CP] Check Pods Manifest.lock */,
 				3D60C9CC23F4483F00F9DB34 /* Sources */,
 				3D60C9CD23F4483F00F9DB34 /* Frameworks */,
 				3D60C9CE23F4483F00F9DB34 /* Resources */,
 				3D53A3DB24503D7A0092EBB9 /* ShellScript */,
+				690254CE518A9AA7B6E49BFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,6 +489,45 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		690254CE518A9AA7B6E49BFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		812F58634FD252EF0946770B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCalc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -335,17 +535,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */,
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
 				11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */,
+				75519D792470FFAB002D01E9 /* WaterfallLayout.swift in Sources */,
 				82ACAF802461649300F621EF /* CollectionViewCell.swift in Sources */,
 				75519D592470FEC3002D01E9 /* Paduck_GiphyViewController.swift in Sources */,
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
+				75519D892470FFAB002D01E9 /* SearchGifNetwork.swift in Sources */,
 				82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */,
+				75519D852470FFAB002D01E9 /* SearchView.swift in Sources */,
+				75519D822470FFAB002D01E9 /* ViewController.swift in Sources */,
+				75519D7A2470FFAB002D01E9 /* RelamManager.swift in Sources */,
 				82ACAF6C246156AB00F621EF /* Photo.swift in Sources */,
+				75519D812470FFAB002D01E9 /* FavoriteButton.swift in Sources */,
 				82DA36732460497200072002 /* LizhongGiphyViewController.swift in Sources */,
+				75519D7B2470FFAB002D01E9 /* SearchViewController.swift in Sources */,
 				82ACAF7E24615C4300F621EF /* CollectionViewLayout.swift in Sources */,
 				82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */,
+				75519D7D2470FFAB002D01E9 /* SearchCell.swift in Sources */,
 				115F715F244ACF7C001E273C /* ArthurCalculatorViewModel.swift in Sources */,
+				75519D7F2470FFAB002D01E9 /* ImageDetailViewModel.swift in Sources */,
+				75519D802470FFAB002D01E9 /* ImageDetailViewController.swift in Sources */,
+				75519D7C2470FFAB002D01E9 /* SearchViewModel.swift in Sources */,
+				75519D7E2470FFAB002D01E9 /* SearchModel.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
 				3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */,
 			);
@@ -489,6 +702,7 @@
 		};
 		3D60C9E523F4484800F9DB34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2768DC87E9617573A17D027A /* Pods-MyCalc.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -518,6 +732,7 @@
 		};
 		3D60C9E623F4484800F9DB34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13002DCE1DE300270614E672 /* Pods-MyCalc.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
