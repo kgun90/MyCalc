@@ -82,10 +82,17 @@ extension Paduck_GiphyViewController {
 }
 
 extension Paduck_GiphyViewController: UICollectionViewDelegateFlowLayout {
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = UIScreen.main.bounds.width / 2 - 10
         
-        return photos[indexPath.item].image.size
+        return CGSize.init(width: width , height: width * photos[indexPath.item].image.size.height / photos[indexPath.item].image.size.width )
+        
+//        return CGSize(width: <#T##Int#>, height: <#T##Int#>)
     }
 //    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
 //        return photos[indexPath.item].image.size.height
@@ -94,7 +101,6 @@ extension Paduck_GiphyViewController: UICollectionViewDelegateFlowLayout {
 
 class PaduckCustumCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!
-    
     
 }
 
