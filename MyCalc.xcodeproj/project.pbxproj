@@ -26,6 +26,8 @@
 		3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAD2430981E00B362BA /* Gun_Calc.storyboard */; };
 		3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB32430986900B362BA /* Paduck.storyboard */; };
 		3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
+		75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */; };
+		75519D592470FEC3002D01E9 /* Paduck_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */; };
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
@@ -65,6 +67,8 @@
 		3D7D4C43244D9C910097BE70 /* Gun_Giphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gun_Giphy.storyboard; sourceTree = "<group>"; };
 		3DFB16FB243092AB000F9C1C /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck_Giphy.storyboard; sourceTree = "<group>"; };
+		75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paduck_GiphyViewController.swift; sourceTree = "<group>"; };
 		82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun_CalcViewController.swift; sourceTree = "<group>"; };
 		82047CAE2430981E00B362BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun_Calc.storyboard; sourceTree = "<group>"; };
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 		82047CB12430986900B362BA /* paduck */ = {
 			isa = PBXGroup;
 			children = (
+				75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */,
+				75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */,
 				82047CB22430986900B362BA /* PaduckViewController.swift */,
 				82047CB32430986900B362BA /* Paduck.storyboard */,
 			);
@@ -280,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */,
 				3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */,
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
@@ -331,6 +338,7 @@
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
 				11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */,
 				82ACAF802461649300F621EF /* CollectionViewCell.swift in Sources */,
+				75519D592470FEC3002D01E9 /* Paduck_GiphyViewController.swift in Sources */,
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
 				82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */,
 				82ACAF6C246156AB00F621EF /* Photo.swift in Sources */,
