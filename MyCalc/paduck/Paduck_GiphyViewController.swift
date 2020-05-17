@@ -8,6 +8,12 @@
 
 import UIKit
 
+class __Paduck_GiphyViewController: UIViewController {
+    override func viewDidLoad() {
+        
+    }
+}
+
 class Paduck_GiphyViewController: UIViewController {
     
     let API_KEY = "GySNZZrCfAWOl4WLuhrPUhyCHgQLGwjz"
