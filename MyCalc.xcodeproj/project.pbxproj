@@ -41,9 +41,22 @@
 		75519D852470FFAB002D01E9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D712470FFAB002D01E9 /* SearchView.swift */; };
 		75519D892470FFAB002D01E9 /* SearchGifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */; };
 		75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D782470FFAB002D01E9 /* SearchGif.swift */; };
+		7C46DD0004C4122C95CFA8BB /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */; };
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
+		829711E724790BDF008D63F5 /* LizhongGiphySecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */; };
+		829711E924790CA4008D63F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E824790CA4008D63F5 /* SettingsViewController.swift */; };
+		829711EB24790E4D008D63F5 /* joo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 829711EA24790E4D008D63F5 /* joo.gif */; };
+		829711ED24791500008D63F5 /* joos.gif in Resources */ = {isa = PBXBuildFile; fileRef = 829711EC24791500008D63F5 /* joos.gif */; };
+		829711EF247915BD008D63F5 /* DataSourceofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711EE247915BD008D63F5 /* DataSourceofViewController.swift */; };
+		829711F1247918D7008D63F5 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F0247918D7008D63F5 /* ChatCell.swift */; };
+		829711F424791DC7008D63F5 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F324791DC7008D63F5 /* Setting.swift */; };
+		829711F62479241A008D63F5 /* keyboardofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F52479241A008D63F5 /* keyboardofViewController.swift */; };
+		829711F8247926E0008D63F5 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F7247926E0008D63F5 /* HeaderCell.swift */; };
+		829711FA2479271E008D63F5 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F92479271E008D63F5 /* SettingCell.swift */; };
+		829711FC2479275E008D63F5 /* ContentTypeSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */; };
+		829711FE24792B61008D63F5 /* DataSourceofSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */; };
 		82ACAF6C246156AB00F621EF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACAF6B246156AB00F621EF /* Photo.swift */; };
 		82ACAF7E24615C4300F621EF /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACAF7D24615C4300F621EF /* CollectionViewLayout.swift */; };
 		82ACAF802461649300F621EF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACAF7F2461649300F621EF /* CollectionViewCell.swift */; };
@@ -54,7 +67,6 @@
 		82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367C246054C400072002 /* LizhongGiphy.storyboard */; };
 		82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */; };
 		82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */; };
-		85D181B5DC0CE1ABAD11F980 /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F0944C1D96CA7A8B722FD6 /* Pods_MyCalc.framework */; };
 		F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 /* End PBXBuildFile section */
@@ -63,8 +75,6 @@
 		115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurCalculatorViewModel.swift; sourceTree = "<group>"; };
 		11B266D8243832AD00C88022 /* Arthur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
 		11B266DA2438330C00C88022 /* ArthurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
-		13002DCE1DE300270614E672 /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
-		2768DC87E9617573A17D027A /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyUISDK.framework; path = Carthage/Build/iOS/GiphyUISDK.framework; sourceTree = "<group>"; };
 		3D53A3D024503D630092EBB9 /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepDiff.framework; path = Carthage/Build/iOS/DeepDiff.framework; sourceTree = "<group>"; };
 		3D53A3D124503D640092EBB9 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Carthage/Build/iOS/WebP.framework; sourceTree = "<group>"; };
@@ -83,6 +93,8 @@
 		3D7D4C43244D9C910097BE70 /* Gun_Giphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gun_Giphy.storyboard; sourceTree = "<group>"; };
 		3DFB16FB243092AB000F9C1C /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
+		6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck_Giphy.storyboard; sourceTree = "<group>"; };
 		75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paduck_GiphyViewController.swift; sourceTree = "<group>"; };
 		75519D5C2470FFAB002D01E9 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
@@ -103,6 +115,18 @@
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
 		82047CB32430986900B362BA /* Paduck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck.storyboard; sourceTree = "<group>"; };
 		822A91BA24475D6A00122C1A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongGiphySecViewController.swift; sourceTree = "<group>"; };
+		829711E824790CA4008D63F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		829711EA24790E4D008D63F5 /* joo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joo.gif; path = Images.xcassets/joo.gif; sourceTree = "<group>"; };
+		829711EC24791500008D63F5 /* joos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joos.gif; path = MyCalc/lizhong/joos.gif; sourceTree = SOURCE_ROOT; };
+		829711EE247915BD008D63F5 /* DataSourceofViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceofViewController.swift; sourceTree = "<group>"; };
+		829711F0247918D7008D63F5 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		829711F324791DC7008D63F5 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		829711F52479241A008D63F5 /* keyboardofViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardofViewController.swift; sourceTree = "<group>"; };
+		829711F7247926E0008D63F5 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		829711F92479271E008D63F5 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTypeSettingCell.swift; sourceTree = "<group>"; };
+		829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceofSettingsViewController.swift; sourceTree = "<group>"; };
 		82ACAF6B246156AB00F621EF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		82ACAF7D24615C4300F621EF /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		82ACAF7F2461649300F621EF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -113,7 +137,7 @@
 		82DA367C246054C400072002 /* LizhongGiphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongGiphy.storyboard; sourceTree = "<group>"; };
 		82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongCal.storyboard; sourceTree = "<group>"; };
 		82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCalViewController.swift; sourceTree = "<group>"; };
-		E0F0944C1D96CA7A8B722FD6 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +151,7 @@
 				3D53A3D624503D640092EBB9 /* WebP.framework in Frameworks */,
 				3D53A3D724503D640092EBB9 /* GiphyCoreSDK.framework in Frameworks */,
 				3D53A3D824503D640092EBB9 /* PINCache.framework in Frameworks */,
-				85D181B5DC0CE1ABAD11F980 /* Pods_MyCalc.framework in Frameworks */,
+				7C46DD0004C4122C95CFA8BB /* Pods_MyCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +342,16 @@
 				82ACAF6B246156AB00F621EF /* Photo.swift */,
 				82ACAF7D24615C4300F621EF /* CollectionViewLayout.swift */,
 				82ACAF7F2461649300F621EF /* CollectionViewCell.swift */,
+				829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */,
+				829711E824790CA4008D63F5 /* SettingsViewController.swift */,
+				829711EE247915BD008D63F5 /* DataSourceofViewController.swift */,
+				829711F0247918D7008D63F5 /* ChatCell.swift */,
+				829711F324791DC7008D63F5 /* Setting.swift */,
+				829711F52479241A008D63F5 /* keyboardofViewController.swift */,
+				829711F7247926E0008D63F5 /* HeaderCell.swift */,
+				829711F92479271E008D63F5 /* SettingCell.swift */,
+				829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */,
+				829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */,
 			);
 			path = lizhong;
 			sourceTree = "<group>";
@@ -354,6 +388,8 @@
 		82DA366F2460485500072002 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				829711EC24791500008D63F5 /* joos.gif */,
+				829711EA24790E4D008D63F5 /* joo.gif */,
 				82DA367424604AB700072002 /* Images.xcassets */,
 				82DA367824604ADF00072002 /* Photos.plist */,
 				82DA367624604ACC00072002 /* Photos.xcassets */,
@@ -372,7 +408,7 @@
 				3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */,
 				3D53A3D324503D640092EBB9 /* PINCache.framework */,
 				3D53A3D124503D640092EBB9 /* WebP.framework */,
-				E0F0944C1D96CA7A8B722FD6 /* Pods_MyCalc.framework */,
+				98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -380,8 +416,8 @@
 		F1C9C5C289ADD93DAE268BDB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2768DC87E9617573A17D027A /* Pods-MyCalc.debug.xcconfig */,
-				13002DCE1DE300270614E672 /* Pods-MyCalc.release.xcconfig */,
+				6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */,
+				4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -393,12 +429,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D60C9E423F4484800F9DB34 /* Build configuration list for PBXNativeTarget "MyCalc" */;
 			buildPhases = (
-				812F58634FD252EF0946770B /* [CP] Check Pods Manifest.lock */,
+				D1F036DFE24CD8AFB2BC9D2F /* [CP] Check Pods Manifest.lock */,
 				3D60C9CC23F4483F00F9DB34 /* Sources */,
 				3D60C9CD23F4483F00F9DB34 /* Frameworks */,
 				3D60C9CE23F4483F00F9DB34 /* Resources */,
 				3D53A3DB24503D7A0092EBB9 /* ShellScript */,
-				690254CE518A9AA7B6E49BFF /* [CP] Embed Pods Frameworks */,
+				DE36CE119ADC9AE882CEE18A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -449,7 +485,9 @@
 			files = (
 				75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */,
 				3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */,
+				829711ED24791500008D63F5 /* joos.gif in Resources */,
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
+				829711EB24790E4D008D63F5 /* joo.gif in Resources */,
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
 				82DA367924604ADF00072002 /* Photos.plist in Resources */,
 				3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */,
@@ -489,24 +527,7 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		690254CE518A9AA7B6E49BFF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		812F58634FD252EF0946770B /* [CP] Check Pods Manifest.lock */ = {
+		D1F036DFE24CD8AFB2BC9D2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -528,6 +549,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DE36CE119ADC9AE882CEE18A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -535,14 +573,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829711FA2479271E008D63F5 /* SettingCell.swift in Sources */,
 				75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */,
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
 				11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */,
 				75519D792470FFAB002D01E9 /* WaterfallLayout.swift in Sources */,
 				82ACAF802461649300F621EF /* CollectionViewCell.swift in Sources */,
+				829711F424791DC7008D63F5 /* Setting.swift in Sources */,
 				75519D592470FEC3002D01E9 /* Paduck_GiphyViewController.swift in Sources */,
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
 				75519D892470FFAB002D01E9 /* SearchGifNetwork.swift in Sources */,
+				829711EF247915BD008D63F5 /* DataSourceofViewController.swift in Sources */,
+				829711E724790BDF008D63F5 /* LizhongGiphySecViewController.swift in Sources */,
 				82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */,
 				75519D852470FFAB002D01E9 /* SearchView.swift in Sources */,
 				75519D822470FFAB002D01E9 /* ViewController.swift in Sources */,
@@ -554,13 +596,19 @@
 				82ACAF7E24615C4300F621EF /* CollectionViewLayout.swift in Sources */,
 				82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */,
 				75519D7D2470FFAB002D01E9 /* SearchCell.swift in Sources */,
+				829711FE24792B61008D63F5 /* DataSourceofSettingsViewController.swift in Sources */,
 				115F715F244ACF7C001E273C /* ArthurCalculatorViewModel.swift in Sources */,
 				75519D7F2470FFAB002D01E9 /* ImageDetailViewModel.swift in Sources */,
+				829711F1247918D7008D63F5 /* ChatCell.swift in Sources */,
 				75519D802470FFAB002D01E9 /* ImageDetailViewController.swift in Sources */,
+				829711E924790CA4008D63F5 /* SettingsViewController.swift in Sources */,
 				75519D7C2470FFAB002D01E9 /* SearchViewModel.swift in Sources */,
 				75519D7E2470FFAB002D01E9 /* SearchModel.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
+				829711F62479241A008D63F5 /* keyboardofViewController.swift in Sources */,
+				829711F8247926E0008D63F5 /* HeaderCell.swift in Sources */,
 				3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */,
+				829711FC2479275E008D63F5 /* ContentTypeSettingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +750,7 @@
 		};
 		3D60C9E523F4484800F9DB34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2768DC87E9617573A17D027A /* Pods-MyCalc.debug.xcconfig */;
+			baseConfigurationReference = 6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -732,7 +780,7 @@
 		};
 		3D60C9E623F4484800F9DB34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13002DCE1DE300270614E672 /* Pods-MyCalc.release.xcconfig */;
+			baseConfigurationReference = 4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
