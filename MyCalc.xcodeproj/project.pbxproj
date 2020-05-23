@@ -11,12 +11,6 @@
 		11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B266D8243832AD00C88022 /* Arthur.storyboard */; };
 		11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B266DA2438330C00C88022 /* ArthurViewController.swift */; };
 		3D23B2CA2434565700852962 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
-		3D53A3D424503D640092EBB9 /* GiphyUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */; };
-		3D53A3D524503D640092EBB9 /* DeepDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D024503D630092EBB9 /* DeepDiff.framework */; };
-		3D53A3D624503D640092EBB9 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D124503D640092EBB9 /* WebP.framework */; };
-		3D53A3D724503D640092EBB9 /* GiphyCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D224503D640092EBB9 /* GiphyCoreSDK.framework */; };
-		3D53A3D824503D640092EBB9 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D324503D640092EBB9 /* PINCache.framework */; };
-		3D53A3DF2450407F0092EBB9 /* OMSDK_Giphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3DE2450407F0092EBB9 /* OMSDK_Giphy.framework */; };
 		3D53A3E3245418EC0092EBB9 /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D53A3E2245418EC0092EBB9 /* File.strings */; };
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
@@ -145,12 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D53A3DF2450407F0092EBB9 /* OMSDK_Giphy.framework in Frameworks */,
-				3D53A3D424503D640092EBB9 /* GiphyUISDK.framework in Frameworks */,
-				3D53A3D524503D640092EBB9 /* DeepDiff.framework in Frameworks */,
-				3D53A3D624503D640092EBB9 /* WebP.framework in Frameworks */,
-				3D53A3D724503D640092EBB9 /* GiphyCoreSDK.framework in Frameworks */,
-				3D53A3D824503D640092EBB9 /* PINCache.framework in Frameworks */,
 				7C46DD0004C4122C95CFA8BB /* Pods_MyCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,8 +504,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/DeepDiff.framework",
 			);
 			outputFileListPaths = (
 			);
