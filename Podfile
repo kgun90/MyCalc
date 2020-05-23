@@ -16,7 +16,7 @@ target 'MyCalc' do
   pod 'Giphy'
 
   # Database
-  pod "RxRealm"
+  pod 'RxRealm'
   
   # Image + Animation + UI
   pod 'Kingfisher', '~> 4.10.1'

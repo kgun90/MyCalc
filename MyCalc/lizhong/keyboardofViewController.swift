@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ViewController {
+extension giphyViewController {
     
     func registerKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector:#selector(keyboardDidChangeFrame(notif:)), name: UIResponder.keyboardDidChangeFrameNotification, object: nil)

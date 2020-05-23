@@ -41,7 +41,7 @@ struct ChatMessage {
     }
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension giphyViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

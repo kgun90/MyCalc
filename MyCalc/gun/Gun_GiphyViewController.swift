@@ -68,7 +68,7 @@ class Gun_GiphyViewController: UIViewController {
        
    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        giphy.theme = .defaultSetting     // 테마설정 automatic(폰설정에 맞춰자동?), dark, light, default가 있음
+        //giphy.theme = .defaultSetting     // 테마설정 automatic(폰설정에 맞춰자동?), dark, light, default가 있음
         giphy.layout = .carousel  // 레이아웃 타입 설정, waterfall(세로),carousel(가로), defaultsetting(기본설정)
         giphy.mediaTypeConfig = [.gifs, .stickers, .emoji] // 표시할 미디어 타입을 설정, 원하는 것만 표시되게 설정가능, 이모지는 레이아웃에서 가로설정 불가
 //      present(giphy, animated: true, completion: nil)

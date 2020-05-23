@@ -38,8 +38,8 @@ class MainViewController: UIViewController {
             viewControllerIdentifier = "Gun_GiphyViewController"
         case 3:
         // "Lizhong"의 뷰 컨트롤러로 이동
-            storyBoardName = "LizhongGiphy"
-            viewControllerIdentifier = "LizhongGiphyViewController"
+            storyBoardName = "LizhongGiphySec"
+            viewControllerIdentifier = "LizhongGiphySecViewController"
         default:
             break
         }

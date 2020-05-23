@@ -96,7 +96,7 @@ class giphyViewController: UIViewController {
     }()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return view.backgroundColor == .black ? .lightConent : .default
+        return view.backgroundColor == .black ? .lightContent : .default
     }
     
     override func viewDidLoad() {
@@ -182,7 +182,7 @@ class giphyViewController: UIViewController {
         settingsViewController.delegate = self
     }
     
-    func updateChatColors(_ theme: GPHTheme) {
+    func updateChatColors(_ theme: GPHThemeType) {
         let isDark = theme == .dark
         textFieldContainer.backgroundColor = isDark ? .black : .white
         textFieldContainer.layer.borderColor = isDark ? giphyViewController.darkTextFieldBorderColor.cgColor : UIColor.white.cgColor
@@ -240,13 +240,14 @@ class giphyViewController: UIViewController {
 public class ExampleTheme: GPHTheme {
     public override init() {
         super.init()
+        self.type = .light
     }
     
     public override var textFieldFont: UIFont? {
         return UIFont.italicSystemFont(ofSize: 15.0)
     }
     
-    public override var madiaButtonFont: UIFont? {
+    public override var mediaButtonFont: UIFont? {
         return UIFont.italicSystemFont(ofSize: 15.0)
     }
     
@@ -281,7 +282,7 @@ extension giphyViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension giphyViewController: SettingsDelegate {
-    func themeDidChange(_ theme: GPHTheme) {
+    func themeDidChange(_ theme: GPHThemeType) {
         updateChatColors(theme)
     }
 }
