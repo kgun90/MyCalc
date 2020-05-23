@@ -91,7 +91,7 @@ class giphyViewController: UIViewController {
         button.widthAnchor.constraint(equalToConstant: 30).isActive = true
         button.heightAnchor.constraint(equalToConstant: 30).isActive = true
         button.backgroundColor = .clear
-        button.setImage(UIImage(named: "SettingsButton"), for: .normal)
+        button.setImage(UIImage(named: "SettingButton"), for: .normal)
         return button
     }()
     
