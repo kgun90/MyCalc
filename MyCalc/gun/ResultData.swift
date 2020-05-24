@@ -24,8 +24,8 @@ struct Images: Codable {
         let url: String
     }
 }
-struct Pagination: Codable {
-    let total_count: Int
-    let count: Int
-    let offset: Int
-}
+//struct Pagination: Codable {
+//    let total_count: Int
+//    let count: Int
+//    let offset: Int
+//}

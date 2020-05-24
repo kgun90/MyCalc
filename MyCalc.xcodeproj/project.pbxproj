@@ -12,13 +12,17 @@
 		11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B266DA2438330C00C88022 /* ArthurViewController.swift */; };
 		3D23B2CA2434565700852962 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
 		3D53A3E3245418EC0092EBB9 /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D53A3E2245418EC0092EBB9 /* File.strings */; };
+		3D55ED27247A5FFF00ACB79D /* LizhongGiphy copy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D55ED25247A5FFF00ACB79D /* LizhongGiphy copy.storyboard */; };
+		3D55ED28247A5FFF00ACB79D /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D55ED26247A5FFF00ACB79D /* View.xib */; };
+		3D55ED29247A638000ACB79D /* SearchGifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */; };
+		3D55ED2A247A639600ACB79D /* GiphyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93445C246EECF100E0FD36 /* GiphyManager.swift */; };
+		3D55ED2B247A63CE00ACB79D /* LizhongGiphySecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */; };
+		3D55ED2C247A640800ACB79D /* ResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93445E246F02EC00E0FD36 /* ResultData.swift */; };
+		3D55ED2D247A646200ACB79D /* DataSourceofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711EE247915BD008D63F5 /* DataSourceofViewController.swift */; };
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
 		3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D4C42244D9C910097BE70 /* Gun_GiphyViewController.swift */; };
 		3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7D4C43244D9C910097BE70 /* Gun_Giphy.storyboard */; };
-		3D93445D246EECF100E0FD36 /* GiphyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93445C246EECF100E0FD36 /* GiphyManager.swift */; };
-		3D93445F246F02EC00E0FD36 /* ResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93445E246F02EC00E0FD36 /* ResultData.swift */; };
-		3D934463246F0A6000E0FD36 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D934462246F0A6000E0FD36 /* ResultModel.swift */; };
 		3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB16FB243092AB000F9C1C /* main.storyboard */; };
 		3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAD2430981E00B362BA /* Gun_Calc.storyboard */; };
 		3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB32430986900B362BA /* Paduck.storyboard */; };
@@ -36,15 +40,12 @@
 		75519D812470FFAB002D01E9 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D6A2470FFAB002D01E9 /* FavoriteButton.swift */; };
 		75519D822470FFAB002D01E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D6C2470FFAB002D01E9 /* ViewController.swift */; };
 		75519D852470FFAB002D01E9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D712470FFAB002D01E9 /* SearchView.swift */; };
-		75519D892470FFAB002D01E9 /* SearchGifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */; };
 		75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D782470FFAB002D01E9 /* SearchGif.swift */; };
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
-		829711E724790BDF008D63F5 /* LizhongGiphySecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */; };
 		829711E924790CA4008D63F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E824790CA4008D63F5 /* SettingsViewController.swift */; };
 		829711EB24790E4D008D63F5 /* joo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 829711EA24790E4D008D63F5 /* joo.gif */; };
-		829711EF247915BD008D63F5 /* DataSourceofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711EE247915BD008D63F5 /* DataSourceofViewController.swift */; };
 		829711F1247918D7008D63F5 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F0247918D7008D63F5 /* ChatCell.swift */; };
 		829711F424791DC7008D63F5 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F324791DC7008D63F5 /* Setting.swift */; };
 		829711F62479241A008D63F5 /* keyboardofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F52479241A008D63F5 /* keyboardofViewController.swift */; };
@@ -67,7 +68,6 @@
 		82DA367724604ACC00072002 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367624604ACC00072002 /* Photos.xcassets */; };
 		82DA367924604ADF00072002 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367824604ADF00072002 /* Photos.plist */; };
 		82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367C246054C400072002 /* LizhongGiphy.storyboard */; };
-		82F38D5F247A5E9B007D2F34 /* joos.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82F38D5E247A5E9B007D2F34 /* joos.gif */; };
 		82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */; };
 		82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */; };
 		F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
@@ -87,6 +87,8 @@
 		3D53A3DC245040530092EBB9 /* OMSDK_Giphy */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = OMSDK_Giphy; path = Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks/OMSDK_Giphy.framework/OMSDK_Giphy; sourceTree = "<group>"; };
 		3D53A3DE2450407F0092EBB9 /* OMSDK_Giphy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMSDK_Giphy.framework; path = "Carthage/Build/iOS/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy/OMSDK_Giphy.framework"; sourceTree = "<group>"; };
 		3D53A3E2245418EC0092EBB9 /* File.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = File.strings; sourceTree = "<group>"; };
+		3D55ED25247A5FFF00ACB79D /* LizhongGiphy copy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "LizhongGiphy copy.storyboard"; sourceTree = "<group>"; };
+		3D55ED26247A5FFF00ACB79D /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		3D60C9D023F4483F00F9DB34 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D60C9DC23F4484800F9DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,7 +149,6 @@
 		82DA367624604ACC00072002 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
 		82DA367824604ADF00072002 /* Photos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
 		82DA367C246054C400072002 /* LizhongGiphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongGiphy.storyboard; sourceTree = "<group>"; };
-		82F38D5E247A5E9B007D2F34 /* joos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joos.gif; path = MyCalc/lizhong/joos.gif; sourceTree = SOURCE_ROOT; };
 		82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongCal.storyboard; sourceTree = "<group>"; };
 		82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCalViewController.swift; sourceTree = "<group>"; };
 		98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -345,6 +346,8 @@
 		82047C9F243091A900B362BA /* lizhong */ = {
 			isa = PBXGroup;
 			children = (
+				3D55ED25247A5FFF00ACB79D /* LizhongGiphy copy.storyboard */,
+				3D55ED26247A5FFF00ACB79D /* View.xib */,
 				82DA366F2460485500072002 /* Assets */,
 				822A91BA24475D6A00122C1A /* btn.wav */,
 				82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */,
@@ -405,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				829711EA24790E4D008D63F5 /* joo.gif */,
-				82F38D5E247A5E9B007D2F34 /* joos.gif */,
 				82DA367424604AB700072002 /* Images.xcassets */,
 				82DA367824604ADF00072002 /* Photos.plist */,
 				82DA367624604ACC00072002 /* Photos.xcassets */,
@@ -505,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D55ED28247A5FFF00ACB79D /* View.xib in Resources */,
 				75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */,
 				3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */,
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
@@ -512,13 +515,13 @@
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
 				82DA367924604ADF00072002 /* Photos.plist in Resources */,
 				3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */,
-				82F38D5F247A5E9B007D2F34 /* joos.gif in Resources */,
 				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
 				822A91BB24475D6A00122C1A /* btn.wav in Resources */,
 				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
 				F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */,
 				82DA367724604ACC00072002 /* Photos.xcassets in Resources */,
 				82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */,
+				3D55ED27247A5FFF00ACB79D /* LizhongGiphy copy.storyboard in Resources */,
 				3D53A3E3245418EC0092EBB9 /* File.strings in Resources */,
 				82DA367524604AB700072002 /* Images.xcassets in Resources */,
 				8297120D24795E4F008D63F5 /* LizhongGiphySec.storyboard in Resources */,
@@ -594,6 +597,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D55ED2D247A646200ACB79D /* DataSourceofViewController.swift in Sources */,
+				3D55ED2C247A640800ACB79D /* ResultData.swift in Sources */,
+				3D55ED2B247A63CE00ACB79D /* LizhongGiphySecViewController.swift in Sources */,
+				3D55ED2A247A639600ACB79D /* GiphyManager.swift in Sources */,
+				3D55ED29247A638000ACB79D /* SearchGifNetwork.swift in Sources */,
 				829711FA2479271E008D63F5 /* SettingCell.swift in Sources */,
 				75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */,
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
