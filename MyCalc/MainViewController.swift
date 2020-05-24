@@ -22,8 +22,11 @@ class MainViewController: UIViewController {
         switch button.tag {
         case 0:
         // "Arthur"의 뷰 컨트롤러로 이동
-            storyBoardName = "Arthur"
-            viewControllerIdentifier = "ArthurViewController"
+            let viewController = SearchViewController()
+            let viewModel = SearchViewModel()
+            viewController.bind(viewModel)
+            self.navigationController?.pushViewController(viewController, animated: true)
+            return
         case 1:
         // "Paduck"의 뷰 컨트롤러로 이동
             storyBoardName = "Paduck_Giphy"
@@ -35,8 +38,8 @@ class MainViewController: UIViewController {
             viewControllerIdentifier = "Gun_GiphyViewController"
         case 3:
         // "Lizhong"의 뷰 컨트롤러로 이동
-            storyBoardName = "LizhongGiphy"
-            viewControllerIdentifier = "LizhongGiphyViewController"
+            storyBoardName = "LizhongGiphySec"
+            viewControllerIdentifier = "LizhongGiphySecViewController"
         default:
             break
         }

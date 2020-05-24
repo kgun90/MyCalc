@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,6 @@
 		11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B266D8243832AD00C88022 /* Arthur.storyboard */; };
 		11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B266DA2438330C00C88022 /* ArthurViewController.swift */; };
 		3D23B2CA2434565700852962 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB16FD2430937F000F9C1C /* MainViewController.swift */; };
-		3D53A3D424503D640092EBB9 /* GiphyUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */; };
-		3D53A3D524503D640092EBB9 /* DeepDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D024503D630092EBB9 /* DeepDiff.framework */; };
-		3D53A3D624503D640092EBB9 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D124503D640092EBB9 /* WebP.framework */; };
-		3D53A3D724503D640092EBB9 /* GiphyCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D224503D640092EBB9 /* GiphyCoreSDK.framework */; };
-		3D53A3D824503D640092EBB9 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3D324503D640092EBB9 /* PINCache.framework */; };
-		3D53A3DF2450407F0092EBB9 /* OMSDK_Giphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53A3DE2450407F0092EBB9 /* OMSDK_Giphy.framework */; };
 		3D53A3E3245418EC0092EBB9 /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D53A3E2245418EC0092EBB9 /* File.strings */; };
 		3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */; };
 		3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DC23F4484800F9DB34 /* Assets.xcassets */; };
@@ -29,9 +23,42 @@
 		3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAD2430981E00B362BA /* Gun_Calc.storyboard */; };
 		3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB32430986900B362BA /* Paduck.storyboard */; };
 		3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */; };
+		75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */; };
+		75519D592470FEC3002D01E9 /* Paduck_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */; };
+		75519D792470FFAB002D01E9 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D5C2470FFAB002D01E9 /* WaterfallLayout.swift */; };
+		75519D7A2470FFAB002D01E9 /* RelamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D5E2470FFAB002D01E9 /* RelamManager.swift */; };
+		75519D7B2470FFAB002D01E9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D612470FFAB002D01E9 /* SearchViewController.swift */; };
+		75519D7C2470FFAB002D01E9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D622470FFAB002D01E9 /* SearchViewModel.swift */; };
+		75519D7D2470FFAB002D01E9 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D642470FFAB002D01E9 /* SearchCell.swift */; };
+		75519D7E2470FFAB002D01E9 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D652470FFAB002D01E9 /* SearchModel.swift */; };
+		75519D7F2470FFAB002D01E9 /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D672470FFAB002D01E9 /* ImageDetailViewModel.swift */; };
+		75519D802470FFAB002D01E9 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D682470FFAB002D01E9 /* ImageDetailViewController.swift */; };
+		75519D812470FFAB002D01E9 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D6A2470FFAB002D01E9 /* FavoriteButton.swift */; };
+		75519D822470FFAB002D01E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D6C2470FFAB002D01E9 /* ViewController.swift */; };
+		75519D852470FFAB002D01E9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D712470FFAB002D01E9 /* SearchView.swift */; };
+		75519D892470FFAB002D01E9 /* SearchGifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */; };
+		75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D782470FFAB002D01E9 /* SearchGif.swift */; };
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
+		829711E724790BDF008D63F5 /* LizhongGiphySecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */; };
+		829711E924790CA4008D63F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E824790CA4008D63F5 /* SettingsViewController.swift */; };
+		829711EB24790E4D008D63F5 /* joo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 829711EA24790E4D008D63F5 /* joo.gif */; };
+		829711EF247915BD008D63F5 /* DataSourceofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711EE247915BD008D63F5 /* DataSourceofViewController.swift */; };
+		829711F1247918D7008D63F5 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F0247918D7008D63F5 /* ChatCell.swift */; };
+		829711F424791DC7008D63F5 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F324791DC7008D63F5 /* Setting.swift */; };
+		829711F62479241A008D63F5 /* keyboardofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F52479241A008D63F5 /* keyboardofViewController.swift */; };
+		829711F8247926E0008D63F5 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F7247926E0008D63F5 /* HeaderCell.swift */; };
+		829711FA2479271E008D63F5 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F92479271E008D63F5 /* SettingCell.swift */; };
+		829711FC2479275E008D63F5 /* ContentTypeSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */; };
+		829711FE24792B61008D63F5 /* DataSourceofSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */; };
+		8297120124795975008D63F5 /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120024795975008D63F5 /* Pods_MyCalc.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8297120324795B50008D63F5 /* GiphyUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120224795B50008D63F5 /* GiphyUISDK.framework */; };
+		8297120524795B53008D63F5 /* GiphyCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120424795B53008D63F5 /* GiphyCoreSDK.framework */; };
+		8297120724795BA9008D63F5 /* OMSDK_Giphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120624795BA9008D63F5 /* OMSDK_Giphy.framework */; };
+		8297120924795D9E008D63F5 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120824795D9E008D63F5 /* PINCache.framework */; };
+		8297120B24795DA4008D63F5 /* DeepDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120A24795DA4008D63F5 /* DeepDiff.framework */; };
+		8297120D24795E4F008D63F5 /* LizhongGiphySec.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8297120C24795E4F008D63F5 /* LizhongGiphySec.storyboard */; };
 		82ACAF6C246156AB00F621EF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACAF6B246156AB00F621EF /* Photo.swift */; };
 		82ACAF7E24615C4300F621EF /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACAF7D24615C4300F621EF /* CollectionViewLayout.swift */; };
 		82ACAF802461649300F621EF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACAF7F2461649300F621EF /* CollectionViewCell.swift */; };
@@ -40,6 +67,7 @@
 		82DA367724604ACC00072002 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367624604ACC00072002 /* Photos.xcassets */; };
 		82DA367924604ADF00072002 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367824604ADF00072002 /* Photos.plist */; };
 		82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367C246054C400072002 /* LizhongGiphy.storyboard */; };
+		82F38D5F247A5E9B007D2F34 /* joos.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82F38D5E247A5E9B007D2F34 /* joos.gif */; };
 		82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */; };
 		82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */; };
 		F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
@@ -71,11 +99,46 @@
 		3D934462246F0A6000E0FD36 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		3DFB16FB243092AB000F9C1C /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
+		6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck_Giphy.storyboard; sourceTree = "<group>"; };
+		75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paduck_GiphyViewController.swift; sourceTree = "<group>"; };
+		75519D5C2470FFAB002D01E9 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		75519D5E2470FFAB002D01E9 /* RelamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelamManager.swift; sourceTree = "<group>"; };
+		75519D612470FFAB002D01E9 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		75519D622470FFAB002D01E9 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		75519D642470FFAB002D01E9 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		75519D652470FFAB002D01E9 /* SearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		75519D672470FFAB002D01E9 /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
+		75519D682470FFAB002D01E9 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		75519D6A2470FFAB002D01E9 /* FavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		75519D6C2470FFAB002D01E9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75519D712470FFAB002D01E9 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGifNetwork.swift; sourceTree = "<group>"; };
+		75519D782470FFAB002D01E9 /* SearchGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGif.swift; sourceTree = "<group>"; };
 		82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun_CalcViewController.swift; sourceTree = "<group>"; };
 		82047CAE2430981E00B362BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gun_Calc.storyboard; sourceTree = "<group>"; };
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
 		82047CB32430986900B362BA /* Paduck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck.storyboard; sourceTree = "<group>"; };
 		822A91BA24475D6A00122C1A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongGiphySecViewController.swift; sourceTree = "<group>"; };
+		829711E824790CA4008D63F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		829711EA24790E4D008D63F5 /* joo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joo.gif; path = Images.xcassets/joo.gif; sourceTree = "<group>"; };
+		829711EE247915BD008D63F5 /* DataSourceofViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceofViewController.swift; sourceTree = "<group>"; };
+		829711F0247918D7008D63F5 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		829711F324791DC7008D63F5 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		829711F52479241A008D63F5 /* keyboardofViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardofViewController.swift; sourceTree = "<group>"; };
+		829711F7247926E0008D63F5 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		829711F92479271E008D63F5 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTypeSettingCell.swift; sourceTree = "<group>"; };
+		829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceofSettingsViewController.swift; sourceTree = "<group>"; };
+		8297120024795975008D63F5 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8297120224795B50008D63F5 /* GiphyUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyUISDK.framework; path = Pods/Giphy/GiphySDK/GiphyUISDK.framework; sourceTree = "<group>"; };
+		8297120424795B53008D63F5 /* GiphyCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyCoreSDK.framework; path = Pods/Giphy/GiphySDK/GiphyCoreSDK.framework; sourceTree = "<group>"; };
+		8297120624795BA9008D63F5 /* OMSDK_Giphy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMSDK_Giphy.framework; path = "Pods/Giphy/GiphySDK/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy/OMSDK_Giphy.framework"; sourceTree = "<group>"; };
+		8297120824795D9E008D63F5 /* PINCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PINCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8297120A24795DA4008D63F5 /* DeepDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeepDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8297120C24795E4F008D63F5 /* LizhongGiphySec.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongGiphySec.storyboard; sourceTree = "<group>"; };
 		82ACAF6B246156AB00F621EF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		82ACAF7D24615C4300F621EF /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		82ACAF7F2461649300F621EF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -84,8 +147,10 @@
 		82DA367624604ACC00072002 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
 		82DA367824604ADF00072002 /* Photos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
 		82DA367C246054C400072002 /* LizhongGiphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongGiphy.storyboard; sourceTree = "<group>"; };
+		82F38D5E247A5E9B007D2F34 /* joos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joos.gif; path = MyCalc/lizhong/joos.gif; sourceTree = SOURCE_ROOT; };
 		82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongCal.storyboard; sourceTree = "<group>"; };
 		82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCalViewController.swift; sourceTree = "<group>"; };
+		98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +158,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D53A3DF2450407F0092EBB9 /* OMSDK_Giphy.framework in Frameworks */,
-				3D53A3D424503D640092EBB9 /* GiphyUISDK.framework in Frameworks */,
-				3D53A3D524503D640092EBB9 /* DeepDiff.framework in Frameworks */,
-				3D53A3D624503D640092EBB9 /* WebP.framework in Frameworks */,
-				3D53A3D724503D640092EBB9 /* GiphyCoreSDK.framework in Frameworks */,
-				3D53A3D824503D640092EBB9 /* PINCache.framework in Frameworks */,
+				8297120B24795DA4008D63F5 /* DeepDiff.framework in Frameworks */,
+				8297120924795D9E008D63F5 /* PINCache.framework in Frameworks */,
+				8297120724795BA9008D63F5 /* OMSDK_Giphy.framework in Frameworks */,
+				8297120124795975008D63F5 /* Pods_MyCalc.framework in Frameworks */,
+				8297120524795B53008D63F5 /* GiphyCoreSDK.framework in Frameworks */,
+				8297120324795B50008D63F5 /* GiphyUISDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,9 +173,9 @@
 		11B266D72438329B00C88022 /* arthur */ = {
 			isa = PBXGroup;
 			children = (
+				75519D8B24710581002D01E9 /* Calculator */,
+				75519D5A2470FF9A002D01E9 /* Giphy */,
 				11B266D8243832AD00C88022 /* Arthur.storyboard */,
-				11B266DA2438330C00C88022 /* ArthurViewController.swift */,
-				115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */,
 			);
 			path = arthur;
 			sourceTree = "<group>";
@@ -152,6 +217,131 @@
 			path = MyCalc;
 			sourceTree = "<group>";
 		};
+		75519D5A2470FF9A002D01E9 /* Giphy */ = {
+			isa = PBXGroup;
+			children = (
+				75519D772470FFAB002D01E9 /* Entity */,
+				75519D5B2470FFAB002D01E9 /* Extension */,
+				75519D752470FFAB002D01E9 /* Networking */,
+				75519D5F2470FFAB002D01E9 /* Presentation */,
+			);
+			path = Giphy;
+			sourceTree = "<group>";
+		};
+		75519D5B2470FFAB002D01E9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				75519D5C2470FFAB002D01E9 /* WaterfallLayout.swift */,
+				75519D5D2470FFAB002D01E9 /* Realm */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		75519D5D2470FFAB002D01E9 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				75519D5E2470FFAB002D01E9 /* RelamManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		75519D5F2470FFAB002D01E9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				75519D602470FFAB002D01E9 /* Search */,
+				75519D662470FFAB002D01E9 /* Detail */,
+				75519D6B2470FFAB002D01E9 /* UniversalComponent */,
+				75519D6D2470FFAB002D01E9 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		75519D602470FFAB002D01E9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				75519D612470FFAB002D01E9 /* SearchViewController.swift */,
+				75519D622470FFAB002D01E9 /* SearchViewModel.swift */,
+				75519D632470FFAB002D01E9 /* Components */,
+				75519D652470FFAB002D01E9 /* SearchModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		75519D632470FFAB002D01E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75519D642470FFAB002D01E9 /* SearchCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		75519D662470FFAB002D01E9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				75519D672470FFAB002D01E9 /* ImageDetailViewModel.swift */,
+				75519D682470FFAB002D01E9 /* ImageDetailViewController.swift */,
+				75519D692470FFAB002D01E9 /* Components */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		75519D692470FFAB002D01E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75519D6A2470FFAB002D01E9 /* FavoriteButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		75519D6B2470FFAB002D01E9 /* UniversalComponent */ = {
+			isa = PBXGroup;
+			children = (
+				75519D6C2470FFAB002D01E9 /* ViewController.swift */,
+			);
+			path = UniversalComponent;
+			sourceTree = "<group>";
+		};
+		75519D6D2470FFAB002D01E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				75519D6F2470FFAB002D01E9 /* Components */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		75519D6F2470FFAB002D01E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75519D712470FFAB002D01E9 /* SearchView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		75519D752470FFAB002D01E9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				75519D762470FFAB002D01E9 /* SearchGifNetwork.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		75519D772470FFAB002D01E9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				75519D782470FFAB002D01E9 /* SearchGif.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		75519D8B24710581002D01E9 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				11B266DA2438330C00C88022 /* ArthurViewController.swift */,
+				115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		82047C9F243091A900B362BA /* lizhong */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +354,17 @@
 				82ACAF6B246156AB00F621EF /* Photo.swift */,
 				82ACAF7D24615C4300F621EF /* CollectionViewLayout.swift */,
 				82ACAF7F2461649300F621EF /* CollectionViewCell.swift */,
+				829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */,
+				829711E824790CA4008D63F5 /* SettingsViewController.swift */,
+				829711EE247915BD008D63F5 /* DataSourceofViewController.swift */,
+				829711F0247918D7008D63F5 /* ChatCell.swift */,
+				829711F324791DC7008D63F5 /* Setting.swift */,
+				829711F52479241A008D63F5 /* keyboardofViewController.swift */,
+				829711F7247926E0008D63F5 /* HeaderCell.swift */,
+				829711F92479271E008D63F5 /* SettingCell.swift */,
+				829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */,
+				829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */,
+				8297120C24795E4F008D63F5 /* LizhongGiphySec.storyboard */,
 			);
 			path = lizhong;
 			sourceTree = "<group>";
@@ -192,6 +393,8 @@
 		82047CB12430986900B362BA /* paduck */ = {
 			isa = PBXGroup;
 			children = (
+				75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */,
+				75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */,
 				82047CB22430986900B362BA /* PaduckViewController.swift */,
 				82047CB32430986900B362BA /* Paduck.storyboard */,
 			);
@@ -201,6 +404,8 @@
 		82DA366F2460485500072002 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				829711EA24790E4D008D63F5 /* joo.gif */,
+				82F38D5E247A5E9B007D2F34 /* joos.gif */,
 				82DA367424604AB700072002 /* Images.xcassets */,
 				82DA367824604ADF00072002 /* Photos.plist */,
 				82DA367624604ACC00072002 /* Photos.xcassets */,
@@ -211,6 +416,12 @@
 		B8FB460EA518285EF21A0F29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8297120A24795DA4008D63F5 /* DeepDiff.framework */,
+				8297120824795D9E008D63F5 /* PINCache.framework */,
+				8297120624795BA9008D63F5 /* OMSDK_Giphy.framework */,
+				8297120024795975008D63F5 /* Pods_MyCalc.framework */,
+				8297120224795B50008D63F5 /* GiphyUISDK.framework */,
+				8297120424795B53008D63F5 /* GiphyCoreSDK.framework */,
 				3D53A3DE2450407F0092EBB9 /* OMSDK_Giphy.framework */,
 				3D53A3DC245040530092EBB9 /* OMSDK_Giphy */,
 				3D53A3D924503D750092EBB9 /* OMSDK_Giphy.framework */,
@@ -219,6 +430,7 @@
 				3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */,
 				3D53A3D324503D640092EBB9 /* PINCache.framework */,
 				3D53A3D124503D640092EBB9 /* WebP.framework */,
+				98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,6 +438,8 @@
 		F1C9C5C289ADD93DAE268BDB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */,
+				4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -237,10 +451,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D60C9E423F4484800F9DB34 /* Build configuration list for PBXNativeTarget "MyCalc" */;
 			buildPhases = (
+				D1F036DFE24CD8AFB2BC9D2F /* [CP] Check Pods Manifest.lock */,
 				3D60C9CC23F4483F00F9DB34 /* Sources */,
 				3D60C9CD23F4483F00F9DB34 /* Frameworks */,
 				3D60C9CE23F4483F00F9DB34 /* Resources */,
 				3D53A3DB24503D7A0092EBB9 /* ShellScript */,
+				DE36CE119ADC9AE882CEE18A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,11 +505,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */,
 				3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */,
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
+				829711EB24790E4D008D63F5 /* joo.gif in Resources */,
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
 				82DA367924604ADF00072002 /* Photos.plist in Resources */,
 				3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */,
+				82F38D5F247A5E9B007D2F34 /* joos.gif in Resources */,
 				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
 				822A91BB24475D6A00122C1A /* btn.wav in Resources */,
 				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
@@ -302,6 +521,7 @@
 				82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */,
 				3D53A3E3245418EC0092EBB9 /* File.strings in Resources */,
 				82DA367524604AB700072002 /* Images.xcassets in Resources */,
+				8297120D24795E4F008D63F5 /* LizhongGiphySec.storyboard in Resources */,
 				82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */,
 				3DFB16FC243092AB000F9C1C /* main.storyboard in Resources */,
 				3D60C9DD23F4484800F9DB34 /* Assets.xcassets in Resources */,
@@ -319,8 +539,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/DeepDiff.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -330,6 +548,45 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		D1F036DFE24CD8AFB2BC9D2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCalc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE36CE119ADC9AE882CEE18A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,21 +594,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829711FA2479271E008D63F5 /* SettingCell.swift in Sources */,
+				75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */,
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
 				11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */,
+				75519D792470FFAB002D01E9 /* WaterfallLayout.swift in Sources */,
 				82ACAF802461649300F621EF /* CollectionViewCell.swift in Sources */,
+				829711F424791DC7008D63F5 /* Setting.swift in Sources */,
+				75519D592470FEC3002D01E9 /* Paduck_GiphyViewController.swift in Sources */,
 				82047CB42430986900B362BA /* PaduckViewController.swift in Sources */,
-				3D93445F246F02EC00E0FD36 /* ResultData.swift in Sources */,
 				82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */,
+				75519D852470FFAB002D01E9 /* SearchView.swift in Sources */,
+				75519D822470FFAB002D01E9 /* ViewController.swift in Sources */,
+				75519D7A2470FFAB002D01E9 /* RelamManager.swift in Sources */,
 				82ACAF6C246156AB00F621EF /* Photo.swift in Sources */,
+				75519D812470FFAB002D01E9 /* FavoriteButton.swift in Sources */,
 				82DA36732460497200072002 /* LizhongGiphyViewController.swift in Sources */,
-				3D934463246F0A6000E0FD36 /* ResultModel.swift in Sources */,
+				75519D7B2470FFAB002D01E9 /* SearchViewController.swift in Sources */,
 				82ACAF7E24615C4300F621EF /* CollectionViewLayout.swift in Sources */,
 				82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */,
-				3D93445D246EECF100E0FD36 /* GiphyManager.swift in Sources */,
+				75519D7D2470FFAB002D01E9 /* SearchCell.swift in Sources */,
+				829711FE24792B61008D63F5 /* DataSourceofSettingsViewController.swift in Sources */,
 				115F715F244ACF7C001E273C /* ArthurCalculatorViewModel.swift in Sources */,
+				75519D7F2470FFAB002D01E9 /* ImageDetailViewModel.swift in Sources */,
+				829711F1247918D7008D63F5 /* ChatCell.swift in Sources */,
+				75519D802470FFAB002D01E9 /* ImageDetailViewController.swift in Sources */,
+				829711E924790CA4008D63F5 /* SettingsViewController.swift in Sources */,
+				75519D7C2470FFAB002D01E9 /* SearchViewModel.swift in Sources */,
+				75519D7E2470FFAB002D01E9 /* SearchModel.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
+				829711F62479241A008D63F5 /* keyboardofViewController.swift in Sources */,
+				829711F8247926E0008D63F5 /* HeaderCell.swift in Sources */,
 				3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */,
+				829711FC2479275E008D63F5 /* ContentTypeSettingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +768,9 @@
 		};
 		3D60C9E523F4484800F9DB34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +779,8 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy",
+					"$(PROJECT_DIR)/Pods/Giphy/GiphySDK",
+					"$(PROJECT_DIR)/Pods/Giphy/GiphySDK/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy",
 				);
 				INFOPLIST_FILE = MyCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,17 +791,41 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks/OMSDK_Giphy.framework",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"DeepDiff\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GiphyCoreSDK\"",
+					"-framework",
+					"\"GiphyUISDK\"",
+					"-framework",
+					"\"OMSDK_Giphy\"",
+					"-framework",
+					"\"PINCache\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"libwebp\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kang.MyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				SYMROOT = build;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3D60C9E623F4484800F9DB34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +834,8 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy",
+					"$(PROJECT_DIR)/Pods/Giphy/GiphySDK",
+					"$(PROJECT_DIR)/Pods/Giphy/GiphySDK/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy",
 				);
 				INFOPLIST_FILE = MyCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,10 +846,32 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/GiphyCoreSDK.framework/Frameworks/OMSDK_Giphy.framework",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"DeepDiff\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GiphyCoreSDK\"",
+					"-framework",
+					"\"GiphyUISDK\"",
+					"-framework",
+					"\"OMSDK_Giphy\"",
+					"-framework",
+					"\"PINCache\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"libwebp\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kang.MyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				SYMROOT = build;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
