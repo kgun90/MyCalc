@@ -12,7 +12,6 @@ import GiphyUISDK
 import GiphyCoreSDK
 
 
-
 class Gun_GiphyViewController: UIViewController {
     fileprivate let collectionView: UICollectionView = {
        let layout = UICollectionViewFlowLayout()
@@ -27,24 +26,38 @@ class Gun_GiphyViewController: UIViewController {
     let gridController = GiphyGridController()
     let searchController: UISearchController = UISearchController(searchResultsController: nil)
     let searchContainerView: UIView = UIView(frame: CGRect.zero)
-    
+
     var screenSize: CGRect = UIScreen.main.bounds
 
+    var giphyManager = GiphyManager()
+    let key = "Hello"
+    
+    var urlArray:Array<searchResult> = [searchResult]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Giphy.configure(apiKey: "GySNZZrCfAWOl4WLuhrPUhyCHgQLGwjz")
         self.title = NSLocalizedString("hi", comment: "Giphy")
-        
-       searchController.searchBar.placeholder = NSLocalizedString("Search GIFs", comment: "The placeholder string for the Giphy search field")
-        searchController.definesPresentationContext = false
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
-        //searchController.delegate = self
+        searchController.searchBar.placeholder = NSLocalizedString("Search GIFs", comment: "The placeholder string for the Giphy search field")
+        searchController.definesPresentationContext = false
+
+        
         searchContainerView.backgroundColor = UIColor.clear
         searchContainerView.translatesAutoresizingMaskIntoConstraints = false
         searchContainerView.addSubview(searchController.searchBar)
         
+        giphyManager.delegate = self
+        searchController.delegate = self
         collectionView.delegate = self
         collectionView.dataSource = self
+        giphyManager.fetchSearch(keyword: self.key)
+        
+        print("main: \(self.urlArray)")
+        
 
         self.view.addSubview(searchContainerView)
         self.view.addSubview(collectionView)
@@ -75,32 +88,75 @@ class Gun_GiphyViewController: UIViewController {
     }
 
 }
-extension Gun_GiphyViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
-    }
+extension Gun_GiphyViewController: UISearchControllerDelegate{
+    
+}
 
+//MARK: - UISearchResultsUpdating
+extension Gun_GiphyViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+//        if let text = searchController.searchBar.text {
+//          print("text entered: \(text)")
+//        } else {
+//            print("default text: \(self.key)")
+//        }
+//
+//        let keyText = self.key
+        
+    }
+}
+
+//MARK: - UICollectionViewDataSource
+
+extension Gun_GiphyViewController: UICollectionViewDataSource {
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.urlArray.count
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCell
-        cell.cellImage.image = UIImage.init(named: "dummy_\(indexPath.row + 1)")
+//        let url: URL = URL(string: "https://pds.joins.com/news/component/ilgan_isplus/201903/30/2019033007430240500.jpeg")!
+//        let url: URL = URL(string: self.dataSourceURL)!
+//        let data = try! Data(contentsOf: url)
+        let aData = urlArray[indexPath.row]
+        print(aData)
+        
+//      if let url = NSURL(string: aData.urlResult ?? ""){
+//            print(url)
+//        }
+        let url = URL(string: aData.images.fixed_height_small_still.url)
+        if let data = try? Data(contentsOf: url!)
+        {
+          let image: UIImage? = UIImage(data: data)
+          cell.cellImage.image = image
+        }
+   
+   
         return cell
+        
     }
+}
+
+//MARK: - UICollectionViewDelegate
+
+extension Gun_GiphyViewController: UICollectionViewDelegate{
 //셀크기
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collWidth = collectionView.frame.width / 2 - 1
+        let collWidth = collectionView.frame.width
         return CGSize(width: collWidth, height: collWidth)
     }
-
-//    //위아래 간격
+//위아래 간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
-    //좌우간격
+//좌우간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
 }
 
+//MARK: - CustomCell
 
 class CustomCell: UICollectionViewCell {
     fileprivate let cellImage: UIImageView = {
@@ -124,5 +180,21 @@ class CustomCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("Init(Coder:) has not been implemented")
+    }
+}
+
+//MARK: - GiphyManagerDelegate
+
+extension Gun_GiphyViewController : GiphyManagerDelegate {
+    func didUpdateResult(result: [searchResult]) {
+        DispatchQueue.main.async {
+            self.urlArray.append(contentsOf: result)
+            print("giphyMAnagerDelegate: \(self.urlArray)")
+            
+            self.collectionView.reloadData()
+        }
+    }
+    func didFailWithError(error: Error) {
+        print(error)
     }
 }
