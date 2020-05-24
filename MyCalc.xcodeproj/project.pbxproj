@@ -41,7 +41,6 @@
 		829711E724790BDF008D63F5 /* LizhongGiphySecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */; };
 		829711E924790CA4008D63F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E824790CA4008D63F5 /* SettingsViewController.swift */; };
 		829711EB24790E4D008D63F5 /* joo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 829711EA24790E4D008D63F5 /* joo.gif */; };
-		829711ED24791500008D63F5 /* joos.gif in Resources */ = {isa = PBXBuildFile; fileRef = 829711EC24791500008D63F5 /* joos.gif */; };
 		829711EF247915BD008D63F5 /* DataSourceofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711EE247915BD008D63F5 /* DataSourceofViewController.swift */; };
 		829711F1247918D7008D63F5 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F0247918D7008D63F5 /* ChatCell.swift */; };
 		829711F424791DC7008D63F5 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F324791DC7008D63F5 /* Setting.swift */; };
@@ -65,6 +64,7 @@
 		82DA367724604ACC00072002 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367624604ACC00072002 /* Photos.xcassets */; };
 		82DA367924604ADF00072002 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367824604ADF00072002 /* Photos.plist */; };
 		82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367C246054C400072002 /* LizhongGiphy.storyboard */; };
+		82F38D5F247A5E9B007D2F34 /* joos.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82F38D5E247A5E9B007D2F34 /* joos.gif */; };
 		82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */; };
 		82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */; };
 		F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
@@ -118,7 +118,6 @@
 		829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongGiphySecViewController.swift; sourceTree = "<group>"; };
 		829711E824790CA4008D63F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		829711EA24790E4D008D63F5 /* joo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joo.gif; path = Images.xcassets/joo.gif; sourceTree = "<group>"; };
-		829711EC24791500008D63F5 /* joos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joos.gif; path = MyCalc/lizhong/joos.gif; sourceTree = SOURCE_ROOT; };
 		829711EE247915BD008D63F5 /* DataSourceofViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceofViewController.swift; sourceTree = "<group>"; };
 		829711F0247918D7008D63F5 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		829711F324791DC7008D63F5 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
@@ -142,6 +141,7 @@
 		82DA367624604ACC00072002 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
 		82DA367824604ADF00072002 /* Photos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
 		82DA367C246054C400072002 /* LizhongGiphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongGiphy.storyboard; sourceTree = "<group>"; };
+		82F38D5E247A5E9B007D2F34 /* joos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joos.gif; path = MyCalc/lizhong/joos.gif; sourceTree = SOURCE_ROOT; };
 		82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongCal.storyboard; sourceTree = "<group>"; };
 		82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCalViewController.swift; sourceTree = "<group>"; };
 		98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -395,8 +395,8 @@
 		82DA366F2460485500072002 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				829711EC24791500008D63F5 /* joos.gif */,
 				829711EA24790E4D008D63F5 /* joo.gif */,
+				82F38D5E247A5E9B007D2F34 /* joos.gif */,
 				82DA367424604AB700072002 /* Images.xcassets */,
 				82DA367824604ADF00072002 /* Photos.plist */,
 				82DA367624604ACC00072002 /* Photos.xcassets */,
@@ -498,12 +498,12 @@
 			files = (
 				75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */,
 				3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */,
-				829711ED24791500008D63F5 /* joos.gif in Resources */,
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
 				829711EB24790E4D008D63F5 /* joo.gif in Resources */,
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
 				82DA367924604ADF00072002 /* Photos.plist in Resources */,
 				3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */,
+				82F38D5F247A5E9B007D2F34 /* joos.gif in Resources */,
 				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
 				822A91BB24475D6A00122C1A /* btn.wav in Resources */,
 				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
