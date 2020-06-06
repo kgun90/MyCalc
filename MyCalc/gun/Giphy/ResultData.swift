@@ -19,10 +19,13 @@ struct searchResult: Codable {
 
 }
 struct Images: Codable {
-    let fixed_height_small_still: Still
+    
+    let fixed_height_still: Still
     struct Still: Codable {
         let url: String
+        let height: String
     }
+
 }
 //struct Pagination: Codable {
 //    let total_count: Int

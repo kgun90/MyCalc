@@ -30,7 +30,10 @@ class Gun_GiphyViewController: UIViewController {
     var screenSize: CGRect = UIScreen.main.bounds
 
     var giphyManager = GiphyManager()
-    let key = "Hello"
+    var key = "Hello"
+
+    
+    var filteredData: [String]!
     
     var urlArray:Array<searchResult> = [searchResult]()
 
@@ -38,8 +41,8 @@ class Gun_GiphyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Giphy.configure(apiKey: "GySNZZrCfAWOl4WLuhrPUhyCHgQLGwjz")
-        self.title = NSLocalizedString("hi", comment: "Giphy")
-        searchController.searchResultsUpdater = self
+        self.title = NSLocalizedString("Giphy", comment: "Giphy")
+
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.placeholder = NSLocalizedString("Search GIFs", comment: "The placeholder string for the Giphy search field")
@@ -51,12 +54,12 @@ class Gun_GiphyViewController: UIViewController {
         searchContainerView.addSubview(searchController.searchBar)
         
         giphyManager.delegate = self
-        searchController.delegate = self
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        giphyManager.fetchSearch(keyword: self.key)
+//        searchController.delegate = self
+        searchController.searchBar.delegate = self
         
-        print("main: \(self.urlArray)")
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        giphyManager.fetchSearch(keyword: key)
         
 
         self.view.addSubview(searchContainerView)
@@ -69,12 +72,12 @@ class Gun_GiphyViewController: UIViewController {
           searchContainerView.heightAnchor.constraint(equalToConstant: 44.0),
                    
         ])
-        self.collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .white
          NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: searchContainerView.bottomAnchor, constant: 10),
             collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0),
             collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0),
-            collectionView.heightAnchor.constraint(equalToConstant:  self.view.frame.height)
+            collectionView.heightAnchor.constraint(equalToConstant: screenSize.height*0.85)
          ])
         
     }
@@ -88,24 +91,20 @@ class Gun_GiphyViewController: UIViewController {
     }
 
 }
-extension Gun_GiphyViewController: UISearchControllerDelegate{
-    
-}
-
-//MARK: - UISearchResultsUpdating
-extension Gun_GiphyViewController: UISearchResultsUpdating {
-    
-    func updateSearchResults(for searchController: UISearchController) {
-//        if let text = searchController.searchBar.text {
-//          print("text entered: \(text)")
-//        } else {
-//            print("default text: \(self.key)")
-//        }
-//
-//        let keyText = self.key
-        
+//MARK: - UISearchBarDelegate
+extension Gun_GiphyViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let keyword = searchBar.text {
+            self.key = keyword
+        } else {
+            self.key = "hello"
+        }
+       giphyManager.fetchSearch(keyword: key)
+        self.collectionView.reloadData()
+        print("Reload")
     }
 }
+
 
 //MARK: - UICollectionViewDataSource
 
@@ -116,22 +115,15 @@ extension Gun_GiphyViewController: UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCell
-//        let url: URL = URL(string: "https://pds.joins.com/news/component/ilgan_isplus/201903/30/2019033007430240500.jpeg")!
-//        let url: URL = URL(string: self.dataSourceURL)!
-//        let data = try! Data(contentsOf: url)
         let aData = urlArray[indexPath.row]
-        print(aData)
+//        print(aData)
         
-//      if let url = NSURL(string: aData.urlResult ?? ""){
-//            print(url)
-//        }
-        let url = URL(string: aData.images.fixed_height_small_still.url)
+        let url = URL(string: aData.images.fixed_height_still.url)
         if let data = try? Data(contentsOf: url!)
         {
           let image: UIImage? = UIImage(data: data)
           cell.cellImage.image = image
         }
-   
    
         return cell
         
@@ -140,17 +132,18 @@ extension Gun_GiphyViewController: UICollectionViewDataSource {
 
 //MARK: - UICollectionViewDelegate
 
-extension Gun_GiphyViewController: UICollectionViewDelegate{
+extension Gun_GiphyViewController: UICollectionViewDelegateFlowLayout{
 //셀크기
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collWidth = collectionView.frame.width
-        return CGSize(width: collWidth, height: collWidth)
+        let collWidth = screenSize.width / 2 - 1
+//        let collHeight = Float(urlArray[indexPath.row].images.preview.height) ?? 0.0
+        return CGSize.init(width: collWidth, height: collWidth)
     }
-//위아래 간격
+////위아래 간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
-//좌우간격
+////좌우간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
@@ -188,9 +181,8 @@ class CustomCell: UICollectionViewCell {
 extension Gun_GiphyViewController : GiphyManagerDelegate {
     func didUpdateResult(result: [searchResult]) {
         DispatchQueue.main.async {
+            self.urlArray.removeAll()
             self.urlArray.append(contentsOf: result)
-            print("giphyMAnagerDelegate: \(self.urlArray)")
-            
             self.collectionView.reloadData()
         }
     }
