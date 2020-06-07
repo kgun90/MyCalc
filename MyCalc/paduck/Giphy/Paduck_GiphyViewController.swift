@@ -36,9 +36,19 @@ class Paduck_GiphyViewController: UIViewController {
             print("url: \(requestURL)")
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: request) { (data, response, error) in
-                print(error)
-                print(response)
-                print(data)
+//                print(error)
+//                print(response)
+//                print(data)
+                
+                if let data = data  {
+                    
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data, options: [])
+                        print(json)
+                    } catch {
+                        
+                    }
+                }
             }
             
             task.resume()
@@ -80,7 +90,7 @@ extension Paduck_GiphyViewController {
 //        return cell
 //    }
 }
-
+ 
 extension Paduck_GiphyViewController: UICollectionViewDelegateFlowLayout {
 //
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
