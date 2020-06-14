@@ -153,3 +153,9 @@ class __Paduck_GiphyViewController: UIViewController {
         }
     }
 }
+
+
+// model
+struct JsonRequest : Codable {
+    
+}

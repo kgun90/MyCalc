@@ -41,6 +41,7 @@
 		75519D822470FFAB002D01E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D6C2470FFAB002D01E9 /* ViewController.swift */; };
 		75519D852470FFAB002D01E9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D712470FFAB002D01E9 /* SearchView.swift */; };
 		75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75519D782470FFAB002D01E9 /* SearchGif.swift */; };
+		7DDC226D4756F0AC9972051E /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A213C74E7CCBE1002771ED6 /* Pods_MyCalc.framework */; };
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
@@ -53,7 +54,6 @@
 		829711FA2479271E008D63F5 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F92479271E008D63F5 /* SettingCell.swift */; };
 		829711FC2479275E008D63F5 /* ContentTypeSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */; };
 		829711FE24792B61008D63F5 /* DataSourceofSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */; };
-		8297120124795975008D63F5 /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120024795975008D63F5 /* Pods_MyCalc.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8297120324795B50008D63F5 /* GiphyUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120224795B50008D63F5 /* GiphyUISDK.framework */; };
 		8297120524795B53008D63F5 /* GiphyCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120424795B53008D63F5 /* GiphyCoreSDK.framework */; };
 		8297120724795BA9008D63F5 /* OMSDK_Giphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8297120624795BA9008D63F5 /* OMSDK_Giphy.framework */; };
@@ -79,6 +79,8 @@
 		115F715E244ACF7C001E273C /* ArthurCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurCalculatorViewModel.swift; sourceTree = "<group>"; };
 		11B266D8243832AD00C88022 /* Arthur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
 		11B266DA2438330C00C88022 /* ArthurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
+		2A213C74E7CCBE1002771ED6 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F5D08453B93A6F4405328B /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyUISDK.framework; path = Carthage/Build/iOS/GiphyUISDK.framework; sourceTree = "<group>"; };
 		3D53A3D024503D630092EBB9 /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepDiff.framework; path = Carthage/Build/iOS/DeepDiff.framework; sourceTree = "<group>"; };
 		3D53A3D124503D640092EBB9 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Carthage/Build/iOS/WebP.framework; sourceTree = "<group>"; };
@@ -101,8 +103,6 @@
 		3D93445E246F02EC00E0FD36 /* ResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultData.swift; sourceTree = "<group>"; };
 		3DFB16FB243092AB000F9C1C /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3DFB16FD2430937F000F9C1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
-		6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		75519D562470FEC3002D01E9 /* Paduck_Giphy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck_Giphy.storyboard; sourceTree = "<group>"; };
 		75519D572470FEC3002D01E9 /* Paduck_GiphyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paduck_GiphyViewController.swift; sourceTree = "<group>"; };
 		75519D5C2470FFAB002D01E9 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
@@ -134,7 +134,6 @@
 		829711F92479271E008D63F5 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTypeSettingCell.swift; sourceTree = "<group>"; };
 		829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceofSettingsViewController.swift; sourceTree = "<group>"; };
-		8297120024795975008D63F5 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8297120224795B50008D63F5 /* GiphyUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyUISDK.framework; path = Pods/Giphy/GiphySDK/GiphyUISDK.framework; sourceTree = "<group>"; };
 		8297120424795B53008D63F5 /* GiphyCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GiphyCoreSDK.framework; path = Pods/Giphy/GiphySDK/GiphyCoreSDK.framework; sourceTree = "<group>"; };
 		8297120624795BA9008D63F5 /* OMSDK_Giphy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMSDK_Giphy.framework; path = "Pods/Giphy/GiphySDK/GiphyCoreSDK.framework/omsdk-ios-1.2.20-Giphy/OMSDK_Giphy.framework"; sourceTree = "<group>"; };
@@ -151,7 +150,7 @@
 		82DA367C246054C400072002 /* LizhongGiphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongGiphy.storyboard; sourceTree = "<group>"; };
 		82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongCal.storyboard; sourceTree = "<group>"; };
 		82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCalViewController.swift; sourceTree = "<group>"; };
-		98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97C53335DA2E8F118FBE850 /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
 		F140A7C7248B89EB00200482 /* __Paduck_GiphyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __Paduck_GiphyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,9 +162,9 @@
 				8297120B24795DA4008D63F5 /* DeepDiff.framework in Frameworks */,
 				8297120924795D9E008D63F5 /* PINCache.framework in Frameworks */,
 				8297120724795BA9008D63F5 /* OMSDK_Giphy.framework in Frameworks */,
-				8297120124795975008D63F5 /* Pods_MyCalc.framework in Frameworks */,
 				8297120524795B53008D63F5 /* GiphyCoreSDK.framework in Frameworks */,
 				8297120324795B50008D63F5 /* GiphyUISDK.framework in Frameworks */,
+				7DDC226D4756F0AC9972051E /* Pods_MyCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +435,6 @@
 				8297120A24795DA4008D63F5 /* DeepDiff.framework */,
 				8297120824795D9E008D63F5 /* PINCache.framework */,
 				8297120624795BA9008D63F5 /* OMSDK_Giphy.framework */,
-				8297120024795975008D63F5 /* Pods_MyCalc.framework */,
 				8297120224795B50008D63F5 /* GiphyUISDK.framework */,
 				8297120424795B53008D63F5 /* GiphyCoreSDK.framework */,
 				3D53A3DE2450407F0092EBB9 /* OMSDK_Giphy.framework */,
@@ -447,7 +445,7 @@
 				3D53A3CF24503D630092EBB9 /* GiphyUISDK.framework */,
 				3D53A3D324503D640092EBB9 /* PINCache.framework */,
 				3D53A3D124503D640092EBB9 /* WebP.framework */,
-				98A6F964E67B0FC79267DE10 /* Pods_MyCalc.framework */,
+				2A213C74E7CCBE1002771ED6 /* Pods_MyCalc.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -465,8 +463,8 @@
 		F1C9C5C289ADD93DAE268BDB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */,
-				4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */,
+				35F5D08453B93A6F4405328B /* Pods-MyCalc.debug.xcconfig */,
+				B97C53335DA2E8F118FBE850 /* Pods-MyCalc.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -478,12 +476,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D60C9E423F4484800F9DB34 /* Build configuration list for PBXNativeTarget "MyCalc" */;
 			buildPhases = (
-				D1F036DFE24CD8AFB2BC9D2F /* [CP] Check Pods Manifest.lock */,
+				BA2C8522D87CAAC6626DEEC5 /* [CP] Check Pods Manifest.lock */,
 				3D60C9CC23F4483F00F9DB34 /* Sources */,
 				3D60C9CD23F4483F00F9DB34 /* Frameworks */,
 				3D60C9CE23F4483F00F9DB34 /* Resources */,
 				3D53A3DB24503D7A0092EBB9 /* ShellScript */,
-				DE36CE119ADC9AE882CEE18A /* [CP] Embed Pods Frameworks */,
+				7E6AB85569A5735F32145D82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -576,7 +574,24 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		D1F036DFE24CD8AFB2BC9D2F /* [CP] Check Pods Manifest.lock */ = {
+		7E6AB85569A5735F32145D82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA2C8522D87CAAC6626DEEC5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -596,23 +611,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE36CE119ADC9AE882CEE18A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCalc/Pods-MyCalc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -802,7 +800,7 @@
 		};
 		3D60C9E523F4484800F9DB34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6308CC744C7A066F1874368A /* Pods-MyCalc.debug.xcconfig */;
+			baseConfigurationReference = 35F5D08453B93A6F4405328B /* Pods-MyCalc.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
@@ -857,7 +855,7 @@
 		};
 		3D60C9E623F4484800F9DB34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F43ACDE83A1011E6EAA7D2E /* Pods-MyCalc.release.xcconfig */;
+			baseConfigurationReference = B97C53335DA2E8F118FBE850 /* Pods-MyCalc.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
