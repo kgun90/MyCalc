@@ -29,8 +29,8 @@ class MainViewController: UIViewController {
             return
         case 1:
         // "Paduck"의 뷰 컨트롤러로 이동
-            storyBoardName = "Paduck_Giphy"
-            viewControllerIdentifier = "Paduck_GiphyViewController"
+            storyBoardName = "WMain"
+            viewControllerIdentifier = "Paduck_WeatherViewController"
             break
         case 2:
         // "Gun"의 뷰 컨트롤러로 이동

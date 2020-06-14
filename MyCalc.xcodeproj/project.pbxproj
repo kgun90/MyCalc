@@ -73,6 +73,8 @@
 		F140A7C8248B89EB00200482 /* __Paduck_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140A7C7248B89EB00200482 /* __Paduck_GiphyViewController.swift */; };
 		F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
+		F1F583EC2495E5B2007173D1 /* WMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F583EB2495E5B2007173D1 /* WMain.storyboard */; };
+		F1F583EF2495E692007173D1 /* WMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F583EE2495E692007173D1 /* WMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +154,8 @@
 		82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCalViewController.swift; sourceTree = "<group>"; };
 		B97C53335DA2E8F118FBE850 /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
 		F140A7C7248B89EB00200482 /* __Paduck_GiphyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __Paduck_GiphyViewController.swift; sourceTree = "<group>"; };
+		F1F583EB2495E5B2007173D1 /* WMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WMain.storyboard; sourceTree = "<group>"; };
+		F1F583EE2495E692007173D1 /* WMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,6 +415,7 @@
 		82047CB12430986900B362BA /* paduck */ = {
 			isa = PBXGroup;
 			children = (
+				F1F583EA2495E55D007173D1 /* Weather */,
 				F140A7C6248B842700200482 /* Giphy */,
 				82047CB22430986900B362BA /* PaduckViewController.swift */,
 				82047CB32430986900B362BA /* Paduck.storyboard */,
@@ -467,6 +472,15 @@
 				B97C53335DA2E8F118FBE850 /* Pods-MyCalc.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1F583EA2495E55D007173D1 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F1F583EB2495E5B2007173D1 /* WMain.storyboard */,
+				F1F583EE2495E692007173D1 /* WMainViewController.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,6 +555,7 @@
 				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
 				822A91BB24475D6A00122C1A /* btn.wav in Resources */,
 				F148674E24309B0200BDF162 /* PaduckViewController.swift in Resources */,
+				F1F583EC2495E5B2007173D1 /* WMain.storyboard in Resources */,
 				F148674D24309AF700BDF162 /* Gun_CalcViewController.swift in Resources */,
 				82DA367724604ACC00072002 /* Photos.xcassets in Resources */,
 				82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */,
@@ -659,6 +674,7 @@
 				829711F8247926E0008D63F5 /* HeaderCell.swift in Sources */,
 				3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */,
 				829711FC2479275E008D63F5 /* ContentTypeSettingCell.swift in Sources */,
+				F1F583EF2495E692007173D1 /* WMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
