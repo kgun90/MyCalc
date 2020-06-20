@@ -45,6 +45,13 @@
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
+		825B6165249E034A00256840 /* LizhongCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6164249E034A00256840 /* LizhongCommon.swift */; };
+		825B6167249E0BAB00256840 /* LizhongLaucnScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825B6166249E0BAB00256840 /* LizhongLaucnScreen.storyboard */; };
+		825B6169249E3E3100256840 /* LizhongWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6168249E3E3100256840 /* LizhongWeatherViewController.swift */; };
+		825B6171249E4ED400256840 /* WeatherSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6170249E4ED400256840 /* WeatherSummary.swift */; };
+		825B6173249E4EF700256840 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6172249E4EF700256840 /* Forecast.swift */; };
+		825B6175249E4F1B00256840 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6174249E4F1B00256840 /* WeatherDataSource.swift */; };
+		825B6177249E569200256840 /* LizhongWeather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825B6176249E569200256840 /* LizhongWeather.storyboard */; };
 		829711E924790CA4008D63F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711E824790CA4008D63F5 /* SettingsViewController.swift */; };
 		829711EB24790E4D008D63F5 /* joo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 829711EA24790E4D008D63F5 /* joo.gif */; };
 		829711F1247918D7008D63F5 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829711F0247918D7008D63F5 /* ChatCell.swift */; };
@@ -125,6 +132,14 @@
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
 		82047CB32430986900B362BA /* Paduck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck.storyboard; sourceTree = "<group>"; };
 		822A91BA24475D6A00122C1A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		825B6164249E034A00256840 /* LizhongCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCommon.swift; sourceTree = "<group>"; };
+		825B6166249E0BAB00256840 /* LizhongLaucnScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongLaucnScreen.storyboard; sourceTree = "<group>"; };
+		825B6168249E3E3100256840 /* LizhongWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongWeatherViewController.swift; sourceTree = "<group>"; };
+		825B616B249E469600256840 /* SummaryApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SummaryApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		825B6170249E4ED400256840 /* WeatherSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSummary.swift; sourceTree = "<group>"; };
+		825B6172249E4EF700256840 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		825B6174249E4F1B00256840 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
+		825B6176249E569200256840 /* LizhongWeather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongWeather.storyboard; sourceTree = "<group>"; };
 		829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongGiphySecViewController.swift; sourceTree = "<group>"; };
 		829711E824790CA4008D63F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		829711EA24790E4D008D63F5 /* joo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = joo.gif; path = Images.xcassets/joo.gif; sourceTree = "<group>"; };
@@ -212,12 +227,11 @@
 				82047CAB2430981E00B362BA /* gun */,
 				82047C9F243091A900B362BA /* lizhong */,
 				3D60C9D323F4483F00F9DB34 /* AppDelegate.swift */,
-				3D60C9DC23F4484800F9DB34 /* Assets.xcassets */,
-				3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */,
 				3D60C9E123F4484800F9DB34 /* Info.plist */,
 				3DFB16FB243092AB000F9C1C /* main.storyboard */,
 				3DFB16FD2430937F000F9C1C /* MainViewController.swift */,
 				3D53A3E2245418EC0092EBB9 /* File.strings */,
+				3D60C9DC23F4484800F9DB34 /* Assets.xcassets */,
 			);
 			path = MyCalc;
 			sourceTree = "<group>";
@@ -370,28 +384,13 @@
 		82047C9F243091A900B362BA /* lizhong */ = {
 			isa = PBXGroup;
 			children = (
+				825B616E249E47C100256840 /* Weather */,
+				825B616D249E475400256840 /* Calculator */,
+				825B616C249E474A00256840 /* Giphy */,
 				3D55ED25247A5FFF00ACB79D /* LizhongGiphy copy.storyboard */,
 				3D55ED26247A5FFF00ACB79D /* View.xib */,
 				82DA366F2460485500072002 /* Assets */,
 				822A91BA24475D6A00122C1A /* btn.wav */,
-				82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */,
-				82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */,
-				82DA36722460497200072002 /* LizhongGiphyViewController.swift */,
-				82DA367C246054C400072002 /* LizhongGiphy.storyboard */,
-				82ACAF6B246156AB00F621EF /* Photo.swift */,
-				82ACAF7D24615C4300F621EF /* CollectionViewLayout.swift */,
-				82ACAF7F2461649300F621EF /* CollectionViewCell.swift */,
-				829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */,
-				829711E824790CA4008D63F5 /* SettingsViewController.swift */,
-				829711EE247915BD008D63F5 /* DataSourceofViewController.swift */,
-				829711F0247918D7008D63F5 /* ChatCell.swift */,
-				829711F324791DC7008D63F5 /* Setting.swift */,
-				829711F52479241A008D63F5 /* keyboardofViewController.swift */,
-				829711F7247926E0008D63F5 /* HeaderCell.swift */,
-				829711F92479271E008D63F5 /* SettingCell.swift */,
-				829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */,
-				829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */,
-				8297120C24795E4F008D63F5 /* LizhongGiphySec.storyboard */,
 			);
 			path = lizhong;
 			sourceTree = "<group>";
@@ -421,6 +420,70 @@
 				82047CB32430986900B362BA /* Paduck.storyboard */,
 			);
 			path = paduck;
+			sourceTree = "<group>";
+		};
+		825B616A249E467600256840 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				825B616B249E469600256840 /* SummaryApi.playground */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		825B616C249E474A00256840 /* Giphy */ = {
+			isa = PBXGroup;
+			children = (
+				82ACAF6B246156AB00F621EF /* Photo.swift */,
+				82DA36722460497200072002 /* LizhongGiphyViewController.swift */,
+				82DA367C246054C400072002 /* LizhongGiphy.storyboard */,
+				82ACAF7D24615C4300F621EF /* CollectionViewLayout.swift */,
+				82ACAF7F2461649300F621EF /* CollectionViewCell.swift */,
+				829711E624790BDF008D63F5 /* LizhongGiphySecViewController.swift */,
+				829711E824790CA4008D63F5 /* SettingsViewController.swift */,
+				829711EE247915BD008D63F5 /* DataSourceofViewController.swift */,
+				829711F0247918D7008D63F5 /* ChatCell.swift */,
+				829711F324791DC7008D63F5 /* Setting.swift */,
+				829711F52479241A008D63F5 /* keyboardofViewController.swift */,
+				829711F7247926E0008D63F5 /* HeaderCell.swift */,
+				829711F92479271E008D63F5 /* SettingCell.swift */,
+				829711FB2479275E008D63F5 /* ContentTypeSettingCell.swift */,
+				829711FD24792B61008D63F5 /* DataSourceofSettingsViewController.swift */,
+				8297120C24795E4F008D63F5 /* LizhongGiphySec.storyboard */,
+			);
+			path = Giphy;
+			sourceTree = "<group>";
+		};
+		825B616D249E475400256840 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */,
+				82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		825B616E249E47C100256840 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				825B616F249E4EBD00256840 /* Model */,
+				825B6168249E3E3100256840 /* LizhongWeatherViewController.swift */,
+				825B6176249E569200256840 /* LizhongWeather.storyboard */,
+				825B6166249E0BAB00256840 /* LizhongLaucnScreen.storyboard */,
+				3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */,
+				825B6164249E034A00256840 /* LizhongCommon.swift */,
+				825B616A249E467600256840 /* Api */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		825B616F249E4EBD00256840 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				825B6170249E4ED400256840 /* WeatherSummary.swift */,
+				825B6172249E4EF700256840 /* Forecast.swift */,
+				825B6174249E4F1B00256840 /* WeatherDataSource.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		82DA366F2460485500072002 /* Assets */ = {
@@ -547,9 +610,11 @@
 				3D55ED28247A5FFF00ACB79D /* View.xib in Resources */,
 				75519D582470FEC3002D01E9 /* Paduck_Giphy.storyboard in Resources */,
 				3D7D4C45244D9E4B0097BE70 /* Gun_Giphy.storyboard in Resources */,
+				825B6177249E569200256840 /* LizhongWeather.storyboard in Resources */,
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
 				829711EB24790E4D008D63F5 /* joo.gif in Resources */,
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
+				825B6167249E0BAB00256840 /* LizhongLaucnScreen.storyboard in Resources */,
 				82DA367924604ADF00072002 /* Photos.plist in Resources */,
 				3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */,
 				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
@@ -637,6 +702,7 @@
 			files = (
 				3D55ED2D247A646200ACB79D /* DataSourceofViewController.swift in Sources */,
 				3D55ED2C247A640800ACB79D /* ResultData.swift in Sources */,
+				825B6175249E4F1B00256840 /* WeatherDataSource.swift in Sources */,
 				3D55ED2B247A63CE00ACB79D /* LizhongGiphySecViewController.swift in Sources */,
 				3D55ED2A247A639600ACB79D /* GiphyManager.swift in Sources */,
 				3D55ED29247A638000ACB79D /* SearchGifNetwork.swift in Sources */,
@@ -655,9 +721,12 @@
 				75519D7A2470FFAB002D01E9 /* RelamManager.swift in Sources */,
 				82ACAF6C246156AB00F621EF /* Photo.swift in Sources */,
 				75519D812470FFAB002D01E9 /* FavoriteButton.swift in Sources */,
+				825B6173249E4EF700256840 /* Forecast.swift in Sources */,
 				82DA36732460497200072002 /* LizhongGiphyViewController.swift in Sources */,
 				75519D7B2470FFAB002D01E9 /* SearchViewController.swift in Sources */,
+				825B6169249E3E3100256840 /* LizhongWeatherViewController.swift in Sources */,
 				82ACAF7E24615C4300F621EF /* CollectionViewLayout.swift in Sources */,
+				825B6171249E4ED400256840 /* WeatherSummary.swift in Sources */,
 				82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */,
 				75519D7D2470FFAB002D01E9 /* SearchCell.swift in Sources */,
 				829711FE24792B61008D63F5 /* DataSourceofSettingsViewController.swift in Sources */,
@@ -671,6 +740,7 @@
 				75519D7E2470FFAB002D01E9 /* SearchModel.swift in Sources */,
 				3D60C9D423F4483F00F9DB34 /* AppDelegate.swift in Sources */,
 				829711F62479241A008D63F5 /* keyboardofViewController.swift in Sources */,
+				825B6165249E034A00256840 /* LizhongCommon.swift in Sources */,
 				829711F8247926E0008D63F5 /* HeaderCell.swift in Sources */,
 				3D7D4C44244D9C910097BE70 /* Gun_GiphyViewController.swift in Sources */,
 				829711FC2479275E008D63F5 /* ContentTypeSettingCell.swift in Sources */,
