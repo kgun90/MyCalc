@@ -15,9 +15,9 @@ class WeatherDataSource {
     var summary: WeatherSummary?
     var forecastList = [Any]()
     
-    func fetchSummary(lat: Double, lon: Double, completion: @escaping () -> ()) {
+    func fetchSummary(lat: Int, lon: Int, completion: @escaping () -> ()) {
         
-        let apiUrl = "http://apis.data.go.kr/1360000/VilageFcstInfoService/getUltraSrtNcst?serviceKey=\(appKey)&pageNo=1&numOfRows=10&dataType=json&base_date=20200620&base_time=2000&nx=\(lat)&ny=\(lon)&"
+        let apiUrl = "http://apis.data.go.kr/1360000/VilageFcstInfoService/getUltraSrtNcst?serviceKey=\(appKey)&pageNo=1&numOfRows=10&dataType=json&base_date=20200621&base_time=2000&nx=\(lat)&ny=\(lon)&"
         
         print(apiUrl)
 

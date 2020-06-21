@@ -13,7 +13,7 @@ class LizhongWeatherViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        WeatherDataSource.shared.fetchSummary(lat: 37.498206, lon: 127.02761) {
+        WeatherDataSource.shared.fetchSummary(lat: 60, lon: 125) {
             [weak self] in self?.completion()
         }
     }
