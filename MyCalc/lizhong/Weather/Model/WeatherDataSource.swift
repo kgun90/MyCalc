@@ -27,6 +27,7 @@ class WeatherDataSource {
 
         let task = session.dataTask(with: url) { (data, response, error) in
             
+            
             defer {
                 DispatchQueue.main.async {
                     completion()
