@@ -7,14 +7,68 @@
 //
 
 import UIKit
+import CoreLocation
 
 class LizhongWeatherViewController : UIViewController {
+    
+    lazy var locationManager: CLLocationManager = {
+        let m = CLLocationManager()
+        m.delegate = self
+        return m
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        WeatherDataSource.shared.fetchSummary(lat: 60, lon: 125) {
+        WeatherDataSource.shared.fetchSummary(lat: 37.4769484, lon: 126.9434709) {
             [weak self] in self?.completion()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if CLLocationManager.locationServicesEnabled() {
+            switch CLLocationManager.authorizationStatus() {
+            case .notDetermined:
+                locationManager.requestWhenInUseAuthorization()
+            case .authorizedAlways, .authorizedWhenInUse:
+                updateCurrentLocation()
+            case .denied, .restricted:
+                show(message: "위치 서비스 사용 불가")
+            @unknown default:
+                fatalError()
+            }
+        } else {
+            show(message: "위치 서비스 사용 불가")
+        }
+    }
+}
+
+extension LizhongWeatherViewController: CLLocationManagerDelegate {
+    
+    func updateCurrentLocation() {
+        locationManager.startUpdatingLocation()
+    }
+    
+    
+    //배터리 성능 고려
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        manager.stopUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        show(message: error.localizedDescription)
+        manager.stopUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .authorizedAlways, .authorizedWhenInUse:
+            updateCurrentLocation()
+        default:
+            break
         }
     }
 }

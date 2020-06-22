@@ -75,6 +75,7 @@
 		82DA367724604ACC00072002 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367624604ACC00072002 /* Photos.xcassets */; };
 		82DA367924604ADF00072002 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367824604ADF00072002 /* Photos.plist */; };
 		82DA367D246054C400072002 /* LizhongGiphy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DA367C246054C400072002 /* LizhongGiphy.storyboard */; };
+		82F33B5024A0D4B600FA1D25 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F33B4F24A0D4B600FA1D25 /* UIViewController+Alert.swift */; };
 		82F8E8BE243B57E2008F333F /* LizhongCal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */; };
 		82F8E8C0243B57F1008F333F /* LizhongCalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */; };
 		F140A7C8248B89EB00200482 /* __Paduck_GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140A7C7248B89EB00200482 /* __Paduck_GiphyViewController.swift */; };
@@ -165,6 +166,7 @@
 		82DA367624604ACC00072002 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
 		82DA367824604ADF00072002 /* Photos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
 		82DA367C246054C400072002 /* LizhongGiphy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongGiphy.storyboard; sourceTree = "<group>"; };
+		82F33B4F24A0D4B600FA1D25 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		82F8E8BD243B57E2008F333F /* LizhongCal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongCal.storyboard; sourceTree = "<group>"; };
 		82F8E8BF243B57F1008F333F /* LizhongCalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCalViewController.swift; sourceTree = "<group>"; };
 		B97C53335DA2E8F118FBE850 /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
@@ -465,6 +467,7 @@
 		825B616E249E47C100256840 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				82F33B4E24A0D4A100FA1D25 /* Extension */,
 				825B616F249E4EBD00256840 /* Model */,
 				825B6168249E3E3100256840 /* LizhongWeatherViewController.swift */,
 				825B6176249E569200256840 /* LizhongWeather.storyboard */,
@@ -495,6 +498,14 @@
 				82DA367624604ACC00072002 /* Photos.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		82F33B4E24A0D4A100FA1D25 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				82F33B4F24A0D4B600FA1D25 /* UIViewController+Alert.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		B8FB460EA518285EF21A0F29 /* Frameworks */ = {
@@ -735,6 +746,7 @@
 				829711F1247918D7008D63F5 /* ChatCell.swift in Sources */,
 				F140A7C8248B89EB00200482 /* __Paduck_GiphyViewController.swift in Sources */,
 				75519D802470FFAB002D01E9 /* ImageDetailViewController.swift in Sources */,
+				82F33B5024A0D4B600FA1D25 /* UIViewController+Alert.swift in Sources */,
 				829711E924790CA4008D63F5 /* SettingsViewController.swift in Sources */,
 				75519D7C2470FFAB002D01E9 /* SearchViewModel.swift in Sources */,
 				75519D7E2470FFAB002D01E9 /* SearchModel.swift in Sources */,
