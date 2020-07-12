@@ -45,8 +45,9 @@
 		82047CAF2430981E00B362BA /* Gun_CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CAC2430981E00B362BA /* Gun_CalcViewController.swift */; };
 		82047CB42430986900B362BA /* PaduckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82047CB22430986900B362BA /* PaduckViewController.swift */; };
 		822A91BB24475D6A00122C1A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 822A91BA24475D6A00122C1A /* btn.wav */; };
+		82522C5724BB39D600F4A9B8 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82522C5624BB39D600F4A9B8 /* SummaryTableViewCell.swift */; };
+		82522C5924BB3A2B00F4A9B8 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82522C5824BB3A2B00F4A9B8 /* ForecastTableViewCell.swift */; };
 		825B6165249E034A00256840 /* LizhongCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6164249E034A00256840 /* LizhongCommon.swift */; };
-		825B6167249E0BAB00256840 /* LizhongLaucnScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825B6166249E0BAB00256840 /* LizhongLaucnScreen.storyboard */; };
 		825B6169249E3E3100256840 /* LizhongWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6168249E3E3100256840 /* LizhongWeatherViewController.swift */; };
 		825B6171249E4ED400256840 /* WeatherSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6170249E4ED400256840 /* WeatherSummary.swift */; };
 		825B6173249E4EF700256840 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B6172249E4EF700256840 /* Forecast.swift */; };
@@ -133,8 +134,9 @@
 		82047CB22430986900B362BA /* PaduckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaduckViewController.swift; sourceTree = "<group>"; };
 		82047CB32430986900B362BA /* Paduck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paduck.storyboard; sourceTree = "<group>"; };
 		822A91BA24475D6A00122C1A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		82522C5624BB39D600F4A9B8 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		82522C5824BB3A2B00F4A9B8 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		825B6164249E034A00256840 /* LizhongCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongCommon.swift; sourceTree = "<group>"; };
-		825B6166249E0BAB00256840 /* LizhongLaucnScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LizhongLaucnScreen.storyboard; sourceTree = "<group>"; };
 		825B6168249E3E3100256840 /* LizhongWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizhongWeatherViewController.swift; sourceTree = "<group>"; };
 		825B616B249E469600256840 /* SummaryApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SummaryApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		825B6170249E4ED400256840 /* WeatherSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSummary.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				3DFB16FD2430937F000F9C1C /* MainViewController.swift */,
 				3D53A3E2245418EC0092EBB9 /* File.strings */,
 				3D60C9DC23F4484800F9DB34 /* Assets.xcassets */,
+				3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */,
 			);
 			path = MyCalc;
 			sourceTree = "<group>";
@@ -424,6 +427,15 @@
 			path = paduck;
 			sourceTree = "<group>";
 		};
+		82522C5524BB39A600F4A9B8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82522C5624BB39D600F4A9B8 /* SummaryTableViewCell.swift */,
+				82522C5824BB3A2B00F4A9B8 /* ForecastTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		825B616A249E467600256840 /* Api */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,12 +479,11 @@
 		825B616E249E47C100256840 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				82522C5524BB39A600F4A9B8 /* Cell */,
 				82F33B4E24A0D4A100FA1D25 /* Extension */,
 				825B616F249E4EBD00256840 /* Model */,
 				825B6168249E3E3100256840 /* LizhongWeatherViewController.swift */,
 				825B6176249E569200256840 /* LizhongWeather.storyboard */,
-				825B6166249E0BAB00256840 /* LizhongLaucnScreen.storyboard */,
-				3D60C9DE23F4484800F9DB34 /* LaunchScreen.storyboard */,
 				825B6164249E034A00256840 /* LizhongCommon.swift */,
 				825B616A249E467600256840 /* Api */,
 			);
@@ -625,7 +636,6 @@
 				3DFB170524309D27000F9C1C /* LaunchScreen.storyboard in Resources */,
 				829711EB24790E4D008D63F5 /* joo.gif in Resources */,
 				3DFB170424309D21000F9C1C /* Paduck.storyboard in Resources */,
-				825B6167249E0BAB00256840 /* LizhongLaucnScreen.storyboard in Resources */,
 				82DA367924604ADF00072002 /* Photos.plist in Resources */,
 				3DFB170324309D1C000F9C1C /* Gun_Calc.storyboard in Resources */,
 				11B266D9243832AD00C88022 /* Arthur.storyboard in Resources */,
@@ -711,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82522C5924BB3A2B00F4A9B8 /* ForecastTableViewCell.swift in Sources */,
 				3D55ED2D247A646200ACB79D /* DataSourceofViewController.swift in Sources */,
 				3D55ED2C247A640800ACB79D /* ResultData.swift in Sources */,
 				825B6175249E4F1B00256840 /* WeatherDataSource.swift in Sources */,
@@ -721,6 +732,7 @@
 				75519D8A2470FFAB002D01E9 /* SearchGif.swift in Sources */,
 				3D23B2CA2434565700852962 /* MainViewController.swift in Sources */,
 				11B266DB2438330C00C88022 /* ArthurViewController.swift in Sources */,
+				82522C5724BB39D600F4A9B8 /* SummaryTableViewCell.swift in Sources */,
 				75519D792470FFAB002D01E9 /* WaterfallLayout.swift in Sources */,
 				82ACAF802461649300F621EF /* CollectionViewCell.swift in Sources */,
 				829711F424791DC7008D63F5 /* Setting.swift in Sources */,
