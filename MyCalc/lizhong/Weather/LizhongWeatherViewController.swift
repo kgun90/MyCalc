@@ -20,9 +20,7 @@ class LizhongWeatherViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        WeatherDataSource.shared.fetchSummary(lat: 37.4769484, lon: 126.9434709) {
-            [weak self] in self?.completion()
-        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,7 +52,13 @@ extension LizhongWeatherViewController: CLLocationManagerDelegate {
     
     //배터리 성능 고려
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        guard let lat = locations.first?.coordinate.latitude,
+            let lon = locations.first?.coordinate.longitude else {
+            return
+        }
+        WeatherDataSource.shared.fetchSummary(lat: lat, lon: lon) {
+            [weak self] in self?.completion()
+        }
         manager.stopUpdatingLocation()
     }
     
